@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="SharedProjectFile_SccProperties">
+    <SharedProjectFile_ProjectGuid>{09b1b6a6-e76f-4b0b-858e-28ce8481a148}</SharedProjectFile_ProjectGuid>
+    <SharedProjectFile_SccProjectName>SAK</SharedProjectFile_SccProjectName>
+    <SharedProjectFile_SccAuxPath>SAK</SharedProjectFile_SccAuxPath>
+    <SharedProjectFile_SccLocalPath>SAK</SharedProjectFile_SccLocalPath>
+    <SharedProjectFile_SccProvider>SAK</SharedProjectFile_SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{FD04729E-526D-4D94-82CB-F6402E9E696F}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ATS</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DomainGroupEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DropDownView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NestedStackLayout.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\NestedTaskLayout.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PatientCreator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PatientManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TaskEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Tasks.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ModelView\PatientView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DomainGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Patient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PatientViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelView\PatientView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
