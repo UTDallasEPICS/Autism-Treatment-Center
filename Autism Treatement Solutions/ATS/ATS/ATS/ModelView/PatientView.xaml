@@ -8,7 +8,7 @@
             <Label Text="Patient Select"  FontSize="34"
             VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button Text ="Add Patient" Clicked="AddClicked"/>
+            <Button Text ="Add New Patient" Clicked="AddClicked"/>
             <ListView x:Name="patientList"  SelectedItem =" {Binding currentPatient} ">
 
                 <ListView.ItemTemplate>
