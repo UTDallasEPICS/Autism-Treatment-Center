@@ -21,17 +21,17 @@ namespace ATS
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            //Spring2018 Team:  Handle when your app starts
+        }
 
-		protected override void OnSleep ()
+        protected override void OnSleep ()
 		{
-			// Handle when your app sleeps
-		}
+            //Spring2018 Team:  Handle when your app sleeps
+        }
 
-		protected override void OnResume ()
+        protected override void OnResume ()
 		{
-			// Handle when your app resumes
-		}
-	}
+            //Spring2018 Team:  Handle when your app resumes
+        }
+    }
 }

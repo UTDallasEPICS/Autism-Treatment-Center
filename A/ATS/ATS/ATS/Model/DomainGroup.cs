@@ -8,18 +8,19 @@ namespace ATS.Model
 {
     public class DomainGroup : ContentPage
     {
+        //Fall2018 Team: We should add an option to delete and an option to edit the items in these lists:
         public static List<string> domainNames = new List<string> {"domain 1", "domain 2"};
         public static List<string> subCatNames = new List<string> { "subCat 1", "subCat 2" };
         public static List<string> goalNames = new List<string> { "goal 1", "goal 2" };
         public static List<string> taskNames = new List<string> { "task 1", "task 2" };
         public static List<List<string>> orderedTestNames = new List<List<string>> { domainNames, subCatNames, goalNames, taskNames };
 
-        //so that we can scroll around on the page
+        //Spring2018 Team: so that we can scroll around on the page
         private ScrollView mainView;
 
         public NestedStackLayout domainLayout;
 
-        //in case we want the names for these for something
+        //Spring2018 Team: in case we want the names for these for something
         private Dictionary<NestedStackLayout.NestedTypes, List<NestedStackLayout>> stacks;
         private List<NestedStackLayout> allStacks;
         public DomainGroup() : base()
@@ -66,12 +67,12 @@ namespace ATS.Model
             mainView.Content = stack;
         }
 
-        //potential function to load a domain from a data file?
+        //Spring2018 Team: potential function to load a domain from a data file?
         public static DomainGroup LoadDomains(string patient, string path = "")
         {
             if(path == "")
             {
-                //provide a test domain
+                //Spring2018 Team: provide a test domain
                 DomainGroup result = new DomainGroup();
                 NestedStackLayout testStack = NestedStackLayout.LoadLayout(result, null, patient, NestedStackLayout.NestedTypes.DomainGroup);
                 BuildTestNestedLayout(result, orderedTestNames, 0, testStack);
@@ -80,11 +81,11 @@ namespace ATS.Model
                 return result;
             }
 
-            //otherwise load stuff
+            //Spring2018 Team: otherwise load stuff
             return null;
         }
 
-        //this will need to be rewritten to use a data file
+        //Spring2018 Team: this will need to be rewritten to use a data file
         private static void BuildTestNestedLayout(DomainGroup dg, List<List<string>> orderedNames, int curIndex, NestedStackLayout parent)
         {
             if (curIndex >= orderedNames.Count)
@@ -92,7 +93,8 @@ namespace ATS.Model
                 var names = orderedNames[curIndex];
                 foreach (string name in names)
                 {
-                    //this is a really hacky way to set the NestedStackLayout type but this is just a test
+                    //Fall2018 Team: we may need to find a better way to do the NestedStackLayout
+                    //Spring2018 Team: this is a really hacky way to set the NestedStackLayout type but this is just a test
                     NestedStackLayout child = NestedStackLayout.LoadLayout(dg, parent, name, (NestedStackLayout.NestedTypes) curIndex + 1);
                     BuildTestNestedLayout(dg, orderedNames, curIndex + 1, child);
                     parent.AddSubView(child);

@@ -30,6 +30,7 @@ namespace ATS.Model
             StackLayout labelLayout = new StackLayout();
             StackLayout entryLayout = new StackLayout();
 
+            //Fall2018 Team: option to add new fields here, and split name into firstname and lastname
             name = new Entry();
             name.WidthRequest = 200;
             name.HorizontalTextAlignment = TextAlignment.Center;

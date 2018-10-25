@@ -16,16 +16,16 @@ namespace ATS.Model
         public Patient(string name, bool fromApp = false)
         {
             PatientName = name;
-            //a user will be defining the domains
-            if(fromApp)
+            //Spring2018 Team: a user will be defining the domains
+            if (fromApp)
             {
                 DGroup = new DomainGroup();
                 DGroup.EmptyInitialize(name);
             }
             else
             {
-                //we need to load a DomainGroup here
-                DGroup = DomainGroup.LoadDomains(PatientName/*, pathToData*/);
+                //Spring2018 Team: we need to load a DomainGroup here
+                DGroup = DomainGroup.LoadDomains(PatientName/*Spring2018 Team: , pathToData*/);
             }
 
         }

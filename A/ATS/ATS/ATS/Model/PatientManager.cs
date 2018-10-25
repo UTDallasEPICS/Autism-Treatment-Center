@@ -8,9 +8,9 @@ namespace ATS.Model
     class PatientManager
     {
 
-        //this needs to become something set by login
-        //and obviously edit requests will need to be validated by a server
-        //there's probably a much better place for this but I wasn't sure where
+        //Spring2018 Team: this needs to become something set by login
+        //Spring2018 Team: and obviously edit requests will need to be validated by a server
+        //Spring2018 Team: there's probably a much better place for this but I wasn't sure where
         public static bool CanUserEdit = true;
 
         private static PatientManager instance;
@@ -32,14 +32,17 @@ namespace ATS.Model
                 throw new Exception("There should only be one PatientManager!");
             instance = this;
             patients = new ObservableCollection<Patient>();
+            //Fall2018 Team: here is where you can change the names of the default patients in the list
             patients.Add(new Patient("John Doe") {PatientAge = "18", Gender = "Male" });
             patients.Add(new Patient("Jane Doe") {PatientAge = "8", Gender = "Female" });
 
-            //adding a patient with real data
-            //using .LoadLayout instead of .CreateLayout because Create will ask for task information
+            //Spring2018 Team: adding a patient with real data
+            //Spring2018 Team: using .LoadLayout instead of .CreateLayout because Create will ask for task information
             Patient p = new Patient("Jane", true) { PatientAge = "14", Gender = "Female" };
             DomainGroup pd = p.DGroup;
             NestedStackLayout  dl = pd.domainLayout;
+
+            //Fall2018 Team: here is where we can change the names of the default domains
             NestedStackLayout behavior = NestedStackLayout.LoadLayout(pd, dl,
                 "Behavior", NestedStackLayout.NestedTypes.Domain);
             NestedStackLayout commun = NestedStackLayout.LoadLayout(pd, dl,
@@ -57,6 +60,7 @@ namespace ATS.Model
             dl.AddSubView(visual);
             dl.AddSubView(self);
 
+            //Fall2018 Team: here are the default goals and tasks and subcategory
             NestedStackLayout refrain = NestedStackLayout.LoadLayout(pd, behavior,
                 "Refrain Aggression", NestedStackLayout.NestedTypes.Subcategory);
             NestedStackLayout tSelf = NestedStackLayout.LoadLayout(pd, refrain,

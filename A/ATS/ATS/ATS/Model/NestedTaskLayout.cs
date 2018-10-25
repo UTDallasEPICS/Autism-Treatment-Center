@@ -17,7 +17,7 @@ namespace ATS.Model
         private TaskType taskType;
         private Task taskPage;
 
-        //we default to a PassFail for testing purposes
+        //Spring2018 Team: we default to a PassFail for testing purposes
         public NestedTaskLayout(DomainGroup dg, NestedStackLayout par, string n, TaskType t = TaskType.PassFail)
             : base(dg, par, n, NestedStackLayout.NestedTypes.Task)
         {
