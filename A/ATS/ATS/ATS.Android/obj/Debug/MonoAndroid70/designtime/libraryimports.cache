@@ -2,5 +2,7 @@
 <Paths>
   <ManifestDocuments />
   <NativeLibraries />
-  <Jars />
+  <Jars>
+    <Jar>obj\\Debug\MonoAndroid70\lp\1\jl\formsviewgroup.jar</Jar>
+  </Jars>
 </Paths>
