@@ -697,20 +697,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\camal\\.nuget\\packages\\": {}
+    "C:\\Users\\Isabella\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\camal\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
       "projectName": "ATS.iOS",
-      "projectPath": "C:\\Users\\camal\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
-      "packagesPath": "C:\\Users\\camal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\camal\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "packagesPath": "C:\\Users\\Isabella\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\camal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Isabella\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
