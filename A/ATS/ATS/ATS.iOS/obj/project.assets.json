@@ -702,11 +702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
       "projectName": "ATS.iOS",
-      "projectPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "projectPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
       "packagesPath": "C:\\Users\\Isabella\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

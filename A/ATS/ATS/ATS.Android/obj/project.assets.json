@@ -710,11 +710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
       "projectName": "ATS.Android",
-      "projectPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
+      "projectPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
       "packagesPath": "C:\\Users\\Isabella\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\Autism Treatement Solutions\\ATS\\ATS\\ATS.Android\\obj\\",
+      "outputPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
