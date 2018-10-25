@@ -195,7 +195,7 @@ namespace ATS.Tasks
 
         public override List<Tuple<string, Entry>> GetEntries()
         {
-            //we just need a time to pass
+            //Spring2018 Team: we just need a time to pass
             return new List<Tuple<string, Entry>>()
             {
                 GetGenericNumEntry("Time to pass (s) ")

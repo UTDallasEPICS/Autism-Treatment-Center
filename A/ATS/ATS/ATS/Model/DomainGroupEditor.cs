@@ -31,10 +31,12 @@ namespace ATS.Model
             List<NestedStackLayout.NestedTypes> groupTypes = new List<NestedStackLayout.NestedTypes>()
             {NestedStackLayout.NestedTypes.Domain, NestedStackLayout.NestedTypes.Subcategory, NestedStackLayout.NestedTypes.Goal, NestedStackLayout.NestedTypes.Task };
             List<string> groupTypeNames = new List<string>()
-            {"Domain", "Subcategory", "Goal", "Task"};
+            //Fall2018 Team: can we change the names of these according to what the project partner wants?
+            {"Domain", "Subcategory", "Goal", "Task"}; 
             List<NestedTaskLayout.TaskType> taskTypes = new List<NestedTaskLayout.TaskType>()
             { NestedTaskLayout.TaskType.Duration, NestedTaskLayout.TaskType.Frequency, NestedTaskLayout.TaskType.Opportunity, NestedTaskLayout.TaskType.PassFail };
             List<string> taskNames = new List<string>()
+            //Fall2018 Team: option to add icons here that represent these 4 items:
             { "Duration", "Frequency", "Opportunity", "PassFail"};
             
 

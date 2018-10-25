@@ -41,6 +41,7 @@ namespace ATS.Model
             name.Text = n;
             selected = new Label();
             selected.Text = oNs[0];
+            //Fall2018 Team: here is the weird light gray bar that is actually a button, change this:
             selected.BackgroundColor = Color.LightGray;
             selected.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(() => { ToggleDropDown(); }) });
 
@@ -105,7 +106,7 @@ namespace ATS.Model
         {
             selectedIndex = i;
             selected.Text = objectNames[i];
-            //do not remove this if statement, will cause IOS to crash
+            //Spring2018 Team: do not remove this if statement, will cause IOS to crash
             if (OnSelected != null)
                 OnSelected.Execute(objects[i]);
 

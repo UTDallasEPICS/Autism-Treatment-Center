@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 
 namespace ATS.ModelView
 {
-    // [XamlCompilation(XamlCompilationOptions.Compile)]
+    //Spring2018 Team:  [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PatientView : ContentPage
     {
 

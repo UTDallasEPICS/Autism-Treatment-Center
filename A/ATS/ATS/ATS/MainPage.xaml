@@ -14,10 +14,13 @@
            HorizontalOptions="Center" />
 
         <!--ATS Logo-->
+        <!--We can add a new logo or resize the logo here:-->
+        <!--If you add a new logo, you have to put the png files in resources-->
         <Image Scale="1" Source="ATSLogo.png"></Image>
 
         <Entry Text="Username"></Entry>
         <Entry Text="Password"></Entry>
+        <!--We might need a forgot password option-->
         
             <!--Sign In Button-->
         <Button Clicked="Button_Clicked" Text="Sign In"></Button>

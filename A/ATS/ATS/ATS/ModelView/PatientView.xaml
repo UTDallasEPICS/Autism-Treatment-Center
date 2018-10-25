@@ -5,12 +5,13 @@
              x:Class="ATS.ModelView.PatientView">
     <ContentPage.Content>
         <StackLayout Spacing="10" Padding="10">
-            <Label Text="Patient Select"  FontSize="34"
+            <!--changed "patient select" to "your patients"-->
+            <Label Text="Your Patients"  FontSize="34"
             VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text ="Add New Patient" Clicked="AddClicked"/>
             <ListView x:Name="patientList"  SelectedItem =" {Binding currentPatient} ">
-
+                <!--more detail can be added for each new patient, like two fields- FirstName, LastName, instead of PatientName-->
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text=" {Binding PatientName} " TextColor="Black"

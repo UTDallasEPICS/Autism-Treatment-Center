@@ -18,7 +18,7 @@ namespace ATS.Model
         private bool isChildVisible = false;
         private bool wasOpenWhenParentClosed = false;
         protected bool completed = false;
-        //in case we want to do different formatting or something for different types
+        //Spring2018 Team: in case we want to do different formatting or something for different types
         private NestedTypes type;
         private NestedStackLayout parent;
         private DomainGroup dgParent;
@@ -29,7 +29,7 @@ namespace ATS.Model
             this.type = type;
             subViews = new ObservableCollection<View>();
 
-            //special casing for the top-level (displays patient name and add button)
+            //Spring2018 Team: special casing for the top-level (displays patient name and add button)
             if (type == NestedTypes.DomainGroup)
             {
                 AbsoluteLayout topper = new AbsoluteLayout();
@@ -72,7 +72,7 @@ namespace ATS.Model
                 complete.IsVisible = false;
 
                 description.Margin = new Thickness(20, 0, 20, 0);
-
+                //Fall2018 Team: I think this is where user taps "add" to add a new item to the list
                 name.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(() => { ToggleChildVisibility(); }) });
                 name.HorizontalOptions = LayoutOptions.Start;
 
@@ -94,6 +94,7 @@ namespace ATS.Model
 
         protected virtual void AddButtons(StackLayout buttonLayout)
         {
+            //Fall2018 Team: I think this is code to edit and delete items from any list
             Button edit = new Button();
             edit.Text = "Edit";
             edit.Clicked += EditClicked;
@@ -167,6 +168,7 @@ namespace ATS.Model
             var res = await dgParent.DisplayAlert("Confirmation", "Are you sure you want to delete this?", "Yes", "No");
             if (res)
             {
+                //Fall2018 Team: does the project partner want to require passwords at this point?
                 parent.RemoveSubView(this);
             }
         }
@@ -215,7 +217,7 @@ namespace ATS.Model
             {
                 if (ss is NestedStackLayout)
                     (ss as NestedStackLayout).ForceClose();
-                //ss.HeightRequest = 0;
+                //Spring2018 Team: ss.HeightRequest = 0;
                 ss.IsVisible = isChildVisible;
             }
             isChildVisible = false;
@@ -223,7 +225,7 @@ namespace ATS.Model
 
         private void ToggleChildVisibility()
         {
-            //this can't be closed
+            //Spring2018 Team: this can't be closed
             if (type == NestedTypes.DomainGroup)
                 return;
             wasOpenWhenParentClosed = false;
@@ -234,7 +236,7 @@ namespace ATS.Model
                 {
                     if (ss is NestedStackLayout)
                         (ss as NestedStackLayout).ForceClose();
-                    //ss.HeightRequest = 0;
+                    //Spring2018 Team: ss.HeightRequest = 0;
                     ss.IsVisible = false;
                 }
             }
@@ -243,7 +245,7 @@ namespace ATS.Model
                 name.HeightRequest = 20;
                 foreach (View ss in subViews)
                 {
-                    //ss.HeightRequest = 50 * ss.Children.Count;
+                    //Spring2018 Team: ss.HeightRequest = 50 * ss.Children.Count;
                     ss.IsVisible = true;
                     if (ss is NestedStackLayout)
                     {
@@ -258,7 +260,8 @@ namespace ATS.Model
             isChildVisible = !isChildVisible;
         }
 
-        //we need to have a way to load task information, but data files should be specified before that
+        //Fall2018 Team: to do item?
+        //Spring2018 Team: we need to have a way to load task information, but data files should be specified before that
         public static NestedStackLayout LoadLayout(DomainGroup dg, NestedStackLayout par, string n, NestedTypes t, NestedTaskLayout.TaskType tt = NestedTaskLayout.TaskType.PassFail)
         {
             if (t == NestedTypes.Task)
