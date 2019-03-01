@@ -11,8 +11,8 @@
 namespace ATS.ModelView {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Ryan\\Source\\Workspaces\\Autism Treatement Solutions\\ATS\\ATS\\ATS\\ModelView" +
-        "\\PatientView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS/ModelView/Patien" +
+        "tView.xaml")]
     public partial class PatientView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

@@ -2,6 +2,199 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Amazon.Core/0.12.1": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Json": "1.9.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        }
+      },
+      "Amazon.DynamoDb/0.12.3": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Core": "0.12.1",
+          "Carbon.Data": "0.34.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        }
+      },
+      "AWSSDK.CognitoIdentity/3.3.2.74": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
+          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.31.12": {
+        "type": "package",
+        "dependencies": {
+          "PCLCrypto": "1.0.2.15130",
+          "PCLStorage": "1.0.2"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.17.10": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.SecurityToken/3.3.4.55": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        }
+      },
+      "Carbon.Data/0.34.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Data.Annotations": "2.0.0",
+          "System.Memory": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        }
+      },
+      "Carbon.Data.Annotations/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        }
+      },
+      "Carbon.Json/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        }
+      },
+      "PCLCrypto/1.0.2.15130": {
+        "type": "package",
+        "dependencies": {
+          "Validation": "[2.0.6, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        }
+      },
+      "PCLStorage/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "Validation/2.0.6.15003": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.122203": {
         "type": "package",
         "compile": {
@@ -127,6 +320,199 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Amazon.Core/0.12.1": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Json": "1.9.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        }
+      },
+      "Amazon.DynamoDb/0.12.3": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Core": "0.12.1",
+          "Carbon.Data": "0.34.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        }
+      },
+      "AWSSDK.CognitoIdentity/3.3.2.74": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
+          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.31.12": {
+        "type": "package",
+        "dependencies": {
+          "PCLCrypto": "1.0.2.15130",
+          "PCLStorage": "1.0.2"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.17.10": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.SecurityToken/3.3.4.55": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        }
+      },
+      "Carbon.Data/0.34.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Data.Annotations": "2.0.0",
+          "System.Memory": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        }
+      },
+      "Carbon.Data.Annotations/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        }
+      },
+      "Carbon.Json/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        }
+      },
+      "PCLCrypto/1.0.2.15130": {
+        "type": "package",
+        "dependencies": {
+          "Validation": "[2.0.6, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        }
+      },
+      "PCLStorage/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "Validation/2.0.6.15003": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.122203": {
         "type": "package",
         "compile": {
@@ -252,6 +638,199 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Amazon.Core/0.12.1": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Json": "1.9.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        }
+      },
+      "Amazon.DynamoDb/0.12.3": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Core": "0.12.1",
+          "Carbon.Data": "0.34.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        }
+      },
+      "AWSSDK.CognitoIdentity/3.3.2.74": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
+          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.31.12": {
+        "type": "package",
+        "dependencies": {
+          "PCLCrypto": "1.0.2.15130",
+          "PCLStorage": "1.0.2"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.17.10": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.SecurityToken/3.3.4.55": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        }
+      },
+      "Carbon.Data/0.34.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Data.Annotations": "2.0.0",
+          "System.Memory": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        }
+      },
+      "Carbon.Data.Annotations/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        }
+      },
+      "Carbon.Json/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        }
+      },
+      "PCLCrypto/1.0.2.15130": {
+        "type": "package",
+        "dependencies": {
+          "Validation": "[2.0.6, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        }
+      },
+      "PCLStorage/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "Validation/2.0.6.15003": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.122203": {
         "type": "package",
         "compile": {
@@ -377,6 +956,199 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Amazon.Core/0.12.1": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Json": "1.9.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.Core.dll": {}
+        }
+      },
+      "Amazon.DynamoDb/0.12.3": {
+        "type": "package",
+        "dependencies": {
+          "Amazon.Core": "0.12.1",
+          "Carbon.Data": "0.34.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Amazon.DynamoDb.dll": {}
+        }
+      },
+      "AWSSDK.CognitoIdentity/3.3.2.74": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
+          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.3.31.12": {
+        "type": "package",
+        "dependencies": {
+          "PCLCrypto": "1.0.2.15130",
+          "PCLStorage": "1.0.2"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.17.10": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.SecurityToken/3.3.4.55": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+        }
+      },
+      "Carbon.Data/0.34.0": {
+        "type": "package",
+        "dependencies": {
+          "Carbon.Data.Annotations": "2.0.0",
+          "System.Memory": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.dll": {}
+        }
+      },
+      "Carbon.Data.Annotations/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Data.Annotations.dll": {}
+        }
+      },
+      "Carbon.Json/1.9.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Carbon.Json.dll": {}
+        }
+      },
+      "PCLCrypto/1.0.2.15130": {
+        "type": "package",
+        "dependencies": {
+          "Validation": "[2.0.6, 3.0.0)"
+        },
+        "compile": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+        }
+      },
+      "PCLStorage/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        },
+        "runtime": {
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
+          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Buffers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.ComponentModel.Annotations/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
+        }
+      },
+      "System.Memory/4.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "Validation/2.0.6.15003": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.122203": {
         "type": "package",
         "compile": {
@@ -503,6 +1275,472 @@
     }
   },
   "libraries": {
+    "Amazon.Core/0.12.1": {
+      "sha512": "fVrWsB3ubMcA4wcNA5RYs0ShLnkfrF9VXzFDHtu6KhD2/2g+GlglLrIaeOATzqvx8LGSYYrXvmTPoj76jepTyw==",
+      "type": "package",
+      "path": "amazon.core/0.12.1",
+      "files": [
+        ".signature.p7s",
+        "amazon.core.0.12.1.nupkg.sha512",
+        "amazon.core.nuspec",
+        "lib/netstandard2.0/Amazon.Core.dll"
+      ]
+    },
+    "Amazon.DynamoDb/0.12.3": {
+      "sha512": "0l+4ZgyeDO9NjaTx3oKZ7KbElad+uQCCT8grLADDoKv0LOdJd0vT5HXF5nS8WbMbdFTWdgld8LIp8a+/bds/PQ==",
+      "type": "package",
+      "path": "amazon.dynamodb/0.12.3",
+      "files": [
+        ".signature.p7s",
+        "amazon.dynamodb.0.12.3.nupkg.sha512",
+        "amazon.dynamodb.nuspec",
+        "lib/netstandard2.0/Amazon.DynamoDb.dll"
+      ]
+    },
+    "AWSSDK.CognitoIdentity/3.3.2.74": {
+      "sha512": "2p6JI3V47WdwQLXP8dNidDJpSPTcjy9Dc/TDSU7QCAh2SvHg474qpZ5rhlMI73wdB2VzTbvZzPL1014x/U8NYw==",
+      "type": "package",
+      "path": "awssdk.cognitoidentity/3.3.2.74",
+      "files": [
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.CognitoIdentity.CodeAnalysis.dll",
+        "awssdk.cognitoidentity.3.3.2.74.nupkg.sha512",
+        "awssdk.cognitoidentity.nuspec",
+        "lib/MonoAndroid10/AWSSDK.CognitoIdentity.XML",
+        "lib/MonoAndroid10/AWSSDK.CognitoIdentity.dll",
+        "lib/MonoTouch10/AWSSDK.CognitoIdentity.XML",
+        "lib/MonoTouch10/AWSSDK.CognitoIdentity.dll",
+        "lib/MonoTouch10/AWSSDK.CognitoIdentity.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.XML",
+        "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll",
+        "lib/net35/AWSSDK.CognitoIdentity.dll",
+        "lib/net35/AWSSDK.CognitoIdentity.pdb",
+        "lib/net35/AWSSDK.CognitoIdentity.xml",
+        "lib/net45/AWSSDK.CognitoIdentity.dll",
+        "lib/net45/AWSSDK.CognitoIdentity.pdb",
+        "lib/net45/AWSSDK.CognitoIdentity.xml",
+        "lib/netstandard1.3/AWSSDK.CognitoIdentity.dll",
+        "lib/netstandard1.3/AWSSDK.CognitoIdentity.pdb",
+        "lib/netstandard1.3/AWSSDK.CognitoIdentity.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentity.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentity.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentity.pdb",
+        "lib/uap/AWSSDK.CognitoIdentity.XML",
+        "lib/uap/AWSSDK.CognitoIdentity.dll",
+        "lib/uap/AWSSDK.CognitoIdentity.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.Core/3.3.31.12": {
+      "sha512": "lRpkY4Ouf++Dkh1I1eOGiwVdyIje2tbOMRcquz9IO6D7hd4ThRUiXivZgt2/JUFiy1A5id/GzQRJzqfhapmMww==",
+      "type": "package",
+      "path": "awssdk.core/3.3.31.12",
+      "files": [
+        ".signature.p7s",
+        "awssdk.core.3.3.31.12.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
+        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netstandard1.3/AWSSDK.Core.dll",
+        "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
+        "lib/wp8/AWSSDK.Core.XML",
+        "lib/wp8/AWSSDK.Core.dll",
+        "lib/wp8/AWSSDK.Core.pdb",
+        "lib/wpa81/AWSSDK.Core.XML",
+        "lib/wpa81/AWSSDK.Core.dll",
+        "lib/wpa81/AWSSDK.Core.pdb",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.DynamoDBv2/3.3.17.10": {
+      "sha512": "HbrQ+MaOiClwGZg5rGI9qkgLixSDv7+ePx4fY7byxdrHiF9FJeHSBq92mszvIACWp1i83s7CRMfAhR0LcLSlEg==",
+      "type": "package",
+      "path": "awssdk.dynamodbv2/3.3.17.10",
+      "files": [
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
+        "awssdk.dynamodbv2.3.3.17.10.nupkg.sha512",
+        "awssdk.dynamodbv2.nuspec",
+        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.XML",
+        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.dll",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.XML",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.dll",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.XML",
+        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll",
+        "lib/net35/AWSSDK.DynamoDBv2.dll",
+        "lib/net35/AWSSDK.DynamoDBv2.pdb",
+        "lib/net35/AWSSDK.DynamoDBv2.xml",
+        "lib/net45/AWSSDK.DynamoDBv2.dll",
+        "lib/net45/AWSSDK.DynamoDBv2.pdb",
+        "lib/net45/AWSSDK.DynamoDBv2.xml",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.pdb",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.pdb",
+        "lib/uap/AWSSDK.DynamoDBv2.XML",
+        "lib/uap/AWSSDK.DynamoDBv2.dll",
+        "lib/uap/AWSSDK.DynamoDBv2.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.SecurityToken/3.3.4.55": {
+      "sha512": "KAyLwSRfxyOj1O/FdylJWInNoyXcui/r/gvHHW7OO2CWx5tT56hJbrCzTEq/nQI/uPBlgbG5Bl98pgzkTMl2Cg==",
+      "type": "package",
+      "path": "awssdk.securitytoken/3.3.4.55",
+      "files": [
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SecurityToken.CodeAnalysis.dll",
+        "awssdk.securitytoken.3.3.4.55.nupkg.sha512",
+        "awssdk.securitytoken.nuspec",
+        "lib/MonoAndroid10/AWSSDK.SecurityToken.XML",
+        "lib/MonoAndroid10/AWSSDK.SecurityToken.dll",
+        "lib/MonoTouch10/AWSSDK.SecurityToken.XML",
+        "lib/MonoTouch10/AWSSDK.SecurityToken.dll",
+        "lib/MonoTouch10/AWSSDK.SecurityToken.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.SecurityToken.XML",
+        "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll",
+        "lib/net35/AWSSDK.SecurityToken.dll",
+        "lib/net35/AWSSDK.SecurityToken.pdb",
+        "lib/net35/AWSSDK.SecurityToken.xml",
+        "lib/net45/AWSSDK.SecurityToken.dll",
+        "lib/net45/AWSSDK.SecurityToken.pdb",
+        "lib/net45/AWSSDK.SecurityToken.xml",
+        "lib/netstandard1.3/AWSSDK.SecurityToken.dll",
+        "lib/netstandard1.3/AWSSDK.SecurityToken.pdb",
+        "lib/netstandard1.3/AWSSDK.SecurityToken.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SecurityToken.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SecurityToken.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SecurityToken.pdb",
+        "lib/uap/AWSSDK.SecurityToken.XML",
+        "lib/uap/AWSSDK.SecurityToken.dll",
+        "lib/uap/AWSSDK.SecurityToken.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Carbon.Data/0.34.0": {
+      "sha512": "9hOLMTQTqetyAKITM+uoEl7sfnRwpCMx+QC46KuqfS+0vnd5duHYOpyRxzNQNYdTwVY1B+g+yrUIdtKmrk3MUA==",
+      "type": "package",
+      "path": "carbon.data/0.34.0",
+      "files": [
+        ".signature.p7s",
+        "carbon.data.0.34.0.nupkg.sha512",
+        "carbon.data.nuspec",
+        "lib/netstandard2.0/Carbon.Data.dll"
+      ]
+    },
+    "Carbon.Data.Annotations/2.0.0": {
+      "sha512": "5P+1vjUmaaE+cBqyH0/sVGLQR/oy5vkuPWcuB0M6Lc9hTle559QlNZt16Le6kKqx0nJO17ST0AqHPnaQGP+0dA==",
+      "type": "package",
+      "path": "carbon.data.annotations/2.0.0",
+      "files": [
+        ".signature.p7s",
+        "carbon.data.annotations.2.0.0.nupkg.sha512",
+        "carbon.data.annotations.nuspec",
+        "lib/netstandard2.0/Carbon.Data.Annotations.dll"
+      ]
+    },
+    "Carbon.Json/1.9.0": {
+      "sha512": "GMx9rYRao0HvvGKDIVo5P++DytMix2sFQ22PQkTijCBoWO40pd59TjC+e/kyhXpqp76VAYlDBLVpDF0CjkUGnQ==",
+      "type": "package",
+      "path": "carbon.json/1.9.0",
+      "files": [
+        ".signature.p7s",
+        "carbon.json.1.9.0.nupkg.sha512",
+        "carbon.json.nuspec",
+        "lib/netstandard2.0/Carbon.Json.dll"
+      ]
+    },
+    "PCLCrypto/1.0.2.15130": {
+      "sha512": "jLppiJ3cGciK6xSnVbNWXW2nVgn2CJ7v2bjl1RMWevoJsYyqgYoW6civl8Qtj0nuYg2UVHDQqrGudCxtcWB8Ow==",
+      "type": "package",
+      "path": "pclcrypto/1.0.2.15130",
+      "files": [
+        ".signature.p7s",
+        "lib/Xamarin.iOS/PCLCrypto.dll",
+        "lib/Xamarin.iOS/PCLCrypto.xml",
+        "lib/monoandroid/PCLCrypto.dll",
+        "lib/monoandroid/PCLCrypto.xml",
+        "lib/monotouch/PCLCrypto.dll",
+        "lib/monotouch/PCLCrypto.xml",
+        "lib/net40-Client/PCLCrypto.dll",
+        "lib/net40-Client/PCLCrypto.xml",
+        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/PCLCrypto.dll",
+        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/PCLCrypto.xml",
+        "lib/sl5/PCLCrypto.dll",
+        "lib/sl5/PCLCrypto.xml",
+        "lib/win81/PCLCrypto.dll",
+        "lib/win81/PCLCrypto.pri",
+        "lib/win81/PCLCrypto.xml",
+        "lib/wp8/PCLCrypto.dll",
+        "lib/wp8/PCLCrypto.xml",
+        "lib/wpa81/PCLCrypto.dll",
+        "lib/wpa81/PCLCrypto.pri",
+        "lib/wpa81/PCLCrypto.xml",
+        "pclcrypto.1.0.2.15130.nupkg.sha512",
+        "pclcrypto.nuspec"
+      ]
+    },
+    "PCLStorage/1.0.2": {
+      "sha512": "gj37kg2DqlKADjnoax9wqSLSo9ZeEBRTEqfXg3R+fm2sbgst2B0Xa6TX1sh2ORrj83vk8lzyZ/DGEQx7c2QKPg==",
+      "type": "package",
+      "path": "pclstorage/1.0.2",
+      "files": [
+        ".signature.p7s",
+        "lib/monoandroid/PCLStorage.Abstractions.dll",
+        "lib/monoandroid/PCLStorage.Abstractions.xml",
+        "lib/monoandroid/PCLStorage.dll",
+        "lib/monoandroid/PCLStorage.xml",
+        "lib/monotouch/PCLStorage.Abstractions.dll",
+        "lib/monotouch/PCLStorage.Abstractions.xml",
+        "lib/monotouch/PCLStorage.dll",
+        "lib/monotouch/PCLStorage.xml",
+        "lib/net45/PCLStorage.Abstractions.dll",
+        "lib/net45/PCLStorage.Abstractions.xml",
+        "lib/net45/PCLStorage.dll",
+        "lib/net45/PCLStorage.xml",
+        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
+        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
+        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
+        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
+        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
+        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
+        "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll",
+        "lib/portable-win8+wpa81/PCLStorage.Abstractions.xml",
+        "lib/portable-win8+wpa81/PCLStorage.dll",
+        "lib/portable-win8+wpa81/PCLStorage.xml",
+        "lib/sl5/PCLStorage.Abstractions.dll",
+        "lib/sl5/PCLStorage.Abstractions.xml",
+        "lib/sl5/PCLStorage.dll",
+        "lib/sl5/PCLStorage.xml",
+        "lib/wp8/PCLStorage.Abstractions.dll",
+        "lib/wp8/PCLStorage.Abstractions.xml",
+        "lib/wp8/PCLStorage.dll",
+        "lib/wp8/PCLStorage.xml",
+        "pclstorage.1.0.2.nupkg.sha512",
+        "pclstorage.nuspec"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "Ii2bedd4HVzddupdU35n3ygohUPlNn7MDimBOYcwWNce2NizQ1fCSaQJY1Tzv80aMqOGpVcU4wZr/Xe50xcTwg==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ComponentModel.Annotations/4.5.0": {
+      "sha512": "f1ApUHGWq/lJC8PZE7JqbA3tiY7ZngZQO2mbYfCG0JlQVVUqqmVMAy0fMvAwEuG639M47ELdP6PQxc5OIo6i6A==",
+      "type": "package",
+      "path": "system.componentmodel.annotations/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net461/System.ComponentModel.Annotations.dll",
+        "lib/netcore50/System.ComponentModel.Annotations.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "lib/portable-net45+win8/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net461/System.ComponentModel.Annotations.dll",
+        "ref/net461/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/System.ComponentModel.Annotations.dll",
+        "ref/netcore50/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/de/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/es/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/fr/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/it/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ja/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ko/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ru/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.xml",
+        "ref/portable-net45+win8/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.annotations.4.5.0.nupkg.sha512",
+        "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.2": {
+      "sha512": "Ohf9h6em5CjPaAzupGtW/TWMzX6aVfIGPh7bq5KQmfvYJr+DqvOa0cRS9ggFKGIuvKTModCQEacGC/CwE8j7cg==",
+      "type": "package",
+      "path": "system.memory/4.5.2",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.2.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "hMkdWxksypQlFXB7JamQegDscxEAQO4FHd/lw/zlSZU9dZgAij65xjCrXer183wvoNAzJic5zzjj2oc9/dloWg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encodings.Web/4.5.0": {
+      "sha512": "+AL7vP4ApfVSCSxphwM/fNeUp7ij7W/Gubc3jBK9wIG5SnzthpRHpKeTIutHRXlzukl9qgfGqUymQ4jPkoKieQ==",
+      "type": "package",
+      "path": "system.text.encodings.web/4.5.0",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.4.5.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Validation/2.0.6.15003": {
+      "sha512": "hCFOgPz+RaixAw1LRKUJH++zYBBTqicQpOVsccHRSfGP7WA6BlLXoEIzkfZSxv7+DlIJZ+oM+T2vT6DKEX0zUQ==",
+      "type": "package",
+      "path": "validation/2.0.6.15003",
+      "files": [
+        ".signature.p7s",
+        "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll",
+        "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.xml",
+        "validation.2.0.6.15003.nupkg.sha512",
+        "validation.nuspec"
+      ]
+    },
     "Xamarin.Forms/2.5.0.122203": {
       "sha512": "dA1xIWShusQEE1MjWiyHqUDvBsLfLQQFUlwaf8wKB1KBXJbE/vPWyxch4bWvhWcsVII375gM1XryEGyVDZtktA==",
       "type": "package",
@@ -693,31 +1931,33 @@
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "AWSSDK.CognitoIdentity >= 3.3.2.74",
+      "AWSSDK.Core >= 3.3.31.12",
+      "AWSSDK.DynamoDBv2 >= 3.3.17.10",
+      "Amazon.DynamoDb >= 0.12.3",
       "Xamarin.Forms >= 2.5.0.122203"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Isabella\\.nuget\\packages\\": {}
+    "/Users/Eman/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "projectUniqueName": "/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/ATS.iOS.csproj",
       "projectName": "ATS.iOS",
-      "projectPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
-      "packagesPath": "C:\\Users\\Isabella\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Isabella\\Documents\\GitHub\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\obj\\",
+      "projectPath": "/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/ATS.iOS.csproj",
+      "packagesPath": "/Users/Eman/.nuget/packages/",
+      "outputPath": "/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Isabella\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Eman/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -729,6 +1969,22 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "AWSSDK.CognitoIdentity": {
+            "target": "Package",
+            "version": "[3.3.2.74, )"
+          },
+          "AWSSDK.Core": {
+            "target": "Package",
+            "version": "[3.3.31.12, )"
+          },
+          "AWSSDK.DynamoDBv2": {
+            "target": "Package",
+            "version": "[3.3.17.10, )"
+          },
+          "Amazon.DynamoDb": {
+            "target": "Package",
+            "version": "[0.12.3, )"
+          },
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[2.5.0.122203, )"
@@ -747,5 +2003,20 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "PCLCrypto 1.0.2.15130 depends on Validation (>= 2.0.6 && < 3.0.0) but Validation 2.0.6 was not found. An approximate best match of Validation 2.0.6.15003 was resolved.",
+      "libraryId": "Validation",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
 }

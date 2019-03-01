@@ -31,7 +31,6 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
-		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Ad-Hoc|Any CPU.Deploy.0 = Release|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
@@ -49,13 +48,11 @@ Global
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.AppStore|iPhoneSimulator.Build.0 = Release|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.AppStore|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F729A7C7-58BC-41B8-8CB5-17627C41E8EE}.Release|Any CPU.Build.0 = Release|Any CPU
@@ -86,6 +83,8 @@ Global
 		{0DAAA722-2875-498B-8ACC-DBA5CDB049E4}.Release|iPhone.Build.0 = Release|iPhone
 		{0DAAA722-2875-498B-8ACC-DBA5CDB049E4}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{0DAAA722-2875-498B-8ACC-DBA5CDB049E4}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{0DAAA722-2875-498B-8ACC-DBA5CDB049E4}.Debug|Any CPU.Build.0 = Debug|iPhone
+		{0DAAA722-2875-498B-8ACC-DBA5CDB049E4}.Ad-Hoc|Any CPU.Build.0 = Ad-Hoc|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

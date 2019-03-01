@@ -11,8 +11,7 @@
 namespace ATS {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Ryan\\Source\\Workspaces\\Autism Treatement Solutions\\ATS\\ATS\\ATS\\MainPage." +
-        "xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS/MainPage.xaml")]
     public partial class MainPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

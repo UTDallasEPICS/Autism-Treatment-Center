@@ -124,6 +124,18 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+    <PackageReference Include="AWSSDK.Core">
+      <Version>3.3.31.12</Version>
+    </PackageReference>
+    <PackageReference Include="AWSSDK.DynamoDBv2">
+      <Version>3.3.17.10</Version>
+    </PackageReference>
+    <PackageReference Include="AWSSDK.CognitoIdentity">
+      <Version>3.3.2.74</Version>
+    </PackageReference>
+    <PackageReference Include="Amazon.DynamoDb">
+      <Version>0.12.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ATSLogo.png" />

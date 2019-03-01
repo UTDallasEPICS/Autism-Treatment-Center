@@ -38,11 +38,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\DomainGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Patient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PatientViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\PatientDataModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelView\PatientView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Database\" />
   </ItemGroup>
 </Project>
