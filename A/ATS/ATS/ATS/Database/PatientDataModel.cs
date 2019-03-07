@@ -12,6 +12,5 @@ namespace ATS.Database
         public string PatientName { get; set; }
         [DynamoDBRangeKey]
         public string PatientLocation { get; set; }
-        public string Parents { get; set; }
     }
 }

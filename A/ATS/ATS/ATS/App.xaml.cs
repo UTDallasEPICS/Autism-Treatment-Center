@@ -5,13 +5,19 @@ using System.Text;
 using ATS.ModelView;
 using ATS.Model;
 using ATS.ViewModel;
-
+using Amazon.CognitoIdentity;
+using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DataModel;
 using Xamarin.Forms;
+using ATS.Database;
+using System.Threading.Tasks;
+using System.Threading;
+using Amazon;
 
 namespace ATS
 {
 	public partial class App : Application
-	{
+    {
 		public App ()
 		{
 			InitializeComponent();
@@ -20,7 +26,7 @@ namespace ATS
 		}
 
 		protected override void OnStart ()
-		{
+        {
             //Spring2018 Team:  Handle when your app starts
         }
 

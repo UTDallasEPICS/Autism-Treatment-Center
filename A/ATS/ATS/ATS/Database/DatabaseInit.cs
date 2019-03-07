@@ -9,6 +9,9 @@ namespace ATS.Database
     //  This class will hold all of the object that we need for our database,
     public class DatabaseInit
     {
+        //  these are static so that we can access them without instatiating an object through our whole
+        //  program, and so that we only create the objects once.
+
         /*********************************************************/
         /*********  Amazon cognito credentials object ************/
 
@@ -37,18 +40,37 @@ namespace ATS.Database
         //  This is the context object we will use for sending and getting info from the database
 
         //  This is the object holding the client credentials for our dynamodb database
-        private static DynamoDBContext _dynamocontext;
+        private static DynamoDBContext _dynamoContext;
 
-        public static DynamoDBContext Dynamocontext
+        public static DynamoDBContext DynamoContext
         {
             get
             {
-                if(_dynamocontext == null)
+                if(_dynamoContext == null)
                 {
                     //  possibly give credentials it's own get property
-                    _dynamocontext = new DynamoDBContext(new AmazonDynamoDBClient(Credentials, DatabaseInfo.DYNAMO_REGION_ENDPOINT));
+                    _dynamoContext = new DynamoDBContext(DynamoClient);
                 }
-                return _dynamocontext;
+                return _dynamoContext;
+            }
+        }
+
+        /*********************************************************/
+        /************   Amazong Dynambodb client   ***************/
+
+        //  This is the client object for dynamo db, which is just used to initialize the context
+       public static AmazonDynamoDBClient _dynamoClient;
+
+        public static AmazonDynamoDBClient DynamoClient
+        {
+            get
+            {
+                if(_dynamoClient == null)
+                {
+                    _dynamoClient = new AmazonDynamoDBClient(Credentials, DatabaseInfo.DYNAMO_REGION_ENDPOINT);
+                }
+
+                return _dynamoClient;
             }
         }
     }

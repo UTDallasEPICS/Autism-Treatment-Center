@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using ATS.Model;
 using ATS.ModelView;
 using ATS.ViewModel;
+using ATS.Database;
 using Xamarin.Forms;
+using Amazon.DynamoDBv2.DataModel;
 
 namespace ATS
 {
@@ -17,9 +19,19 @@ namespace ATS
             InitializeComponent();
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PatientView()); //PatientView
+            DatabaseCommunication database = new DatabaseCommunication();
+
+            PatientDataModel patient = new PatientDataModel()
+            {
+                PatientName = "Second Name",
+                PatientLocation = "Austin"
+            };
+
+            await database.SavePatient(patient);
+
+            await Navigation.PushAsync(new PatientView()); //PatientView
         }
 
     }

@@ -27,7 +27,6 @@
         
             <!--Sign In Button-->
         <Button Clicked="Button_Clicked" Text="Sign In"></Button>
-       
         
     </StackLayout>
     </ScrollView>

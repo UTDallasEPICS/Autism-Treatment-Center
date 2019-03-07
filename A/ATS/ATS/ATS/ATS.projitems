@@ -41,6 +41,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\PatientDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseCommunication.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelView\PatientView.xaml">

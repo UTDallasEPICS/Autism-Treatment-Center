@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Amazon;
 
 using Foundation;
 using UIKit;
+using Amazon;
 
 namespace ATS.iOS
 {
