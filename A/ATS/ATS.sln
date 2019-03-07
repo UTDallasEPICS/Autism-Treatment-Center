@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATS.iOS", "ATS\ATS.iOS\ATS.
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ATS", "ATS\ATS\ATS.shproj", "{FD04729E-526D-4D94-82CB-F6402E9E696F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{49F36F48-4BA4-4583-B2A1-EFE85C5B8FF9}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ATS\ATS\ATS.projitems*{0daaa722-2875-498b-8acc-dba5cdb049e4}*SharedItemsImports = 4
