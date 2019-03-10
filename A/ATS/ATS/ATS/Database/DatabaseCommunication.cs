@@ -1,6 +1,8 @@
 ﻿using System;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
+using ATS.Database.DataModel;
+using ATS.Database.DataModel.ModelRelation;
 using System.Threading.Tasks;
 
 namespace ATS.Database

@@ -10,8 +10,6 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Xamarin.Forms;
 using ATS.Database;
-using System.Threading.Tasks;
-using System.Threading;
 using Amazon;
 
 namespace ATS

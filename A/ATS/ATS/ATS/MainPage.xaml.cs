@@ -7,6 +7,7 @@ using ATS.Model;
 using ATS.ModelView;
 using ATS.ViewModel;
 using ATS.Database;
+using ATS.Database.DataModel;
 using Xamarin.Forms;
 using Amazon.DynamoDBv2.DataModel;
 
@@ -25,8 +26,11 @@ namespace ATS
 
             PatientDataModel patient = new PatientDataModel()
             {
-                PatientName = "Second Name",
-                PatientLocation = "Austin"
+                PatientId = 1,
+                PatientName = "Guy1",
+                PatientAge = 15,
+                PatientGender = "Male",
+                PatientActive = true
             };
 
             await database.SavePatient(patient);

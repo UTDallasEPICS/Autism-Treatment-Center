@@ -2,7 +2,6 @@
 using Amazon.CognitoIdentity;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using Amazon;
 
 namespace ATS.Database
 {
@@ -56,7 +55,7 @@ namespace ATS.Database
         }
 
         /*********************************************************/
-        /************   Amazong Dynambodb client   ***************/
+        /*******;kljdfl;*****   Amazong Dynambodb client   ***************/
 
         //  This is the client object for dynamo db, which is just used to initialize the context
        public static AmazonDynamoDBClient _dynamoClient;

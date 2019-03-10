@@ -135,9 +135,6 @@
     <PackageReference Include="AWSSDK.CognitoIdentity">
       <Version>3.3.2.74</Version>
     </PackageReference>
-    <PackageReference Include="Amazon.DynamoDb">
-      <Version>0.12.3</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ATSLogo.png" />

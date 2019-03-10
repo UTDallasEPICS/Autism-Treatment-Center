@@ -40,8 +40,18 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PatientViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Database\PatientDataModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseCommunication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\PatientDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\DomainDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\SubcategoryDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\GoalDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\TaskDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\TeacherDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\TeacherPatient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\SubcategoryGoal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\PatientDomain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\GoalTask.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\DomainSubcategory.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelView\PatientView.xaml">
@@ -51,5 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Database\DataModel\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\" />
   </ItemGroup>
 </Project>
