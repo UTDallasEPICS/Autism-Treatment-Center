@@ -55,7 +55,7 @@ namespace ATS.Database
         }
 
         /*********************************************************/
-        /*******;kljdfl;*****   Amazong Dynambodb client   ***************/
+        /************   Amazong Dynambodb client   ***************/
 
         //  This is the client object for dynamo db, which is just used to initialize the context
        public static AmazonDynamoDBClient _dynamoClient;

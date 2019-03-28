@@ -13,32 +13,46 @@ namespace ATS.Model
         //Spring2018 Team: there's probably a much better place for this but I wasn't sure where
         public static bool CanUserEdit = true;
 
+
+        /*
+         *  Don't think we need this if we make the functions and variables static, since there can only
+         *  ever be one        
+         * 
         private static PatientManager instance;
         public static PatientManager Instance
         {
             get
             {
                 if (instance == null)
-                    new PatientManager();
+                    instance = new PatientManager();
                 return instance;
             }
         }
+        */
 
-        private ObservableCollection<Patient> patients;
+        private ObservableCollection<Patient0> patients;
 
         public PatientManager()
         {
+            /*
             if (instance != null)
                 throw new Exception("There should only be one PatientManager!");
-            instance = this;
-            patients = new ObservableCollection<Patient>();
+            instance = this;              
+            */
+
+
+            patients = new ObservableCollection<Patient0>();
+
+            /*****************************************************************************
+            *** Put code here to get patients for the logged in user form the database ***
+            *****************************************************************************/
+
             //Fall2018 Team: here is where you can change the names of the default patients in the list
-            patients.Add(new Patient("John Doe") {PatientAge = "18", Gender = "Male" });
-            patients.Add(new Patient("Jane Doe") {PatientAge = "8", Gender = "Female" });
+            patients.Add(new Patient0("John Doe") {PatientAge = "18", Gender = "Male" });
 
             //Spring2018 Team: adding a patient with real data
             //Spring2018 Team: using .LoadLayout instead of .CreateLayout because Create will ask for task information
-            Patient p = new Patient("Jane", true) { PatientAge = "14", Gender = "Female" };
+            Patient0 p = new Patient0("Jane", true) { PatientAge = "14", Gender = "Female" };
             DomainGroup pd = p.DGroup;
             NestedStackLayout  dl = pd.domainLayout;
 
@@ -93,12 +107,12 @@ namespace ATS.Model
             patients.Add(p);
         }
 
-        public void AddPatient(Patient p)
+        public void AddPatient(Patient0 p)
         {
             patients.Add(p);
         }
 
-        public ObservableCollection<Patient> GetPatients()
+        public ObservableCollection<Patient0> GetPatients()
         {
             return patients;
         }

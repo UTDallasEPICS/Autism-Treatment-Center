@@ -18,6 +18,10 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Content\PatientContent\PatientContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
@@ -36,7 +40,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Tasks.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ModelView\PatientView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\DomainGroup.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Patient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Patient0.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PatientViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
@@ -52,6 +56,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\PatientDomain.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\GoalTask.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\DomainSubcategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Content\PatientContent\PatientContentPage.xaml.cs">
+      <DependentUpon>PatientContentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DataModel\DisplayModel\Patient.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)ModelView\PatientView.xaml">
@@ -63,5 +71,9 @@
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
     <Folder Include="$(MSBuildThisFileDirectory)Database\DataModel\" />
     <Folder Include="$(MSBuildThisFileDirectory)Database\DataModel\ModelRelation\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Content\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Content\PatientContent\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Content\PatientContent\PatientViews\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Database\DataModel\DisplayModel\" />
   </ItemGroup>
 </Project>

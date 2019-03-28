@@ -10,17 +10,14 @@ using Xamarin.Forms;
 
 namespace ATS.ViewModel
 {
-
-
-
     public class PatientViewModel
     {
 
-        public ObservableCollection<Patient> Patients;
+        public ObservableCollection<Patient0> Patient0;
 
         public PatientViewModel()
         {
-            Patients = PatientManager.Instance.GetPatients();
+            //Patients = PatientManager.Instance.GetPatients();
         }
     }
 }

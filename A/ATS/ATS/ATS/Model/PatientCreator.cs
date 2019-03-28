@@ -91,10 +91,10 @@ namespace ATS.Model
                 DisplayAlert("Incomplete Data", "Not all of the data fields were entered, please enter all of the information.", "OK");
                 return;
             }
-            Patient newPatient = new Patient(name.Text, true);
+            Patient0 newPatient = new Patient0(name.Text, true);
             newPatient.PatientAge = age.Text;
             newPatient.Gender = gender.Text;
-            PatientManager.Instance.AddPatient(newPatient);
+            //PatientManager.Instance.AddPatient(newPatient);
             Navigation.RemovePage(this);
 
         }

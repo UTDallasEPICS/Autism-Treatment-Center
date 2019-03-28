@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ATS.Model;
-using ATS.ModelView;
-using ATS.ViewModel;
-using ATS.Database;
 using ATS.Database.DataModel;
+using ATS.Database;
+using ATS.ModelView;
 using Xamarin.Forms;
-using Amazon.DynamoDBv2.DataModel;
+using ATS.Content.PatientContent;
+using System.Collections.ObjectModel;
 
 namespace ATS
 {
@@ -22,20 +17,24 @@ namespace ATS
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
+            //  Database communication objector to interact with our database
             DatabaseCommunication database = new DatabaseCommunication();
 
-            PatientDataModel patient = new PatientDataModel()
-            {
-                PatientId = 1,
-                PatientName = "Guy1",
-                PatientAge = 15,
-                PatientGender = "Male",
-                PatientActive = true
+            await database.getPatients(1);
+
+            ObservableCollection<PatientDataModel> patients = new ObservableCollection<PatientDataModel>{
+                new PatientDataModel {
+                        PatientId = 123,
+                        PatientName = "Patient1",
+                        PatientAge = 12,
+                        PatientGender = "Male",
+                        PatientActive = true
+                }
             };
 
-            await database.SavePatient(patient);
+            //  Need to collect user login information here
 
-            await Navigation.PushAsync(new PatientView()); //PatientView
+            await Navigation.PushAsync(new PatientContentPage(patients)); //PatientView
         }
 
     }

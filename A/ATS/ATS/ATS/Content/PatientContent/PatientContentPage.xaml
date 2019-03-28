@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ATS.Content.PatientContent"
+             xmlns:models="clr-namespace:ATS.Database.DataModel.DisplayModel"
+             x:Class="ATS.Content.PatientContent.PatientContentPage">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <!-- Creates a title with font 24 -->
+            <Label Text="Your Patients"  FontSize="34"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <!-- Button to give the option to add a new patient -->
+            <Button Text ="Add New Patient" Clicked="AddClicked"/>
+            
+            <!-- List View to hold our List of patient objects -->
+            <ListView x:Name="PatientList" Margin="0,20,0,0">
+                <!-- List view to hold a list of patientModel objects with information -->
+                <ListView.ItemTemplate>
+                    <!-- This is a template for the data in the List View ItemsSource ObervableList -->
+                    <DataTemplate>
+                        <!-- Information on the text displayed for every ObersvableList object -->
+                        <TextCell Text=" {Binding PatientName} " TextColor="Black"
+                                  Detail=" {Binding PatientAge} " DetailColor=" Black" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

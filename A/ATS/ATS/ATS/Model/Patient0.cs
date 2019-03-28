@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 
 namespace ATS.Model
 {
-	public class Patient
+	public class Patient0
     {
 
         public string PatientName { get; set; }
@@ -13,7 +13,7 @@ namespace ATS.Model
         public string Gender { get; set; }
         public DomainGroup DGroup;
 
-        public Patient(string name, bool fromApp = false)
+        public Patient0(string name, bool fromApp = false)
         {
             PatientName = name;
             //Spring2018 Team: a user will be defining the domains

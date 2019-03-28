@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 using ATS.Model;
 using ATS.ViewModel;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,18 +18,18 @@ namespace ATS.ModelView
         {
             InitializeComponent();
             patientList.ItemSelected += PatientOnSelection;
-            patientList.ItemsSource = PatientManager.Instance.GetPatients();
+            //patientList.ItemsSource = PatientManager.Instance.GetPatients();
         }
 
         void PatientOnSelection(object sender, SelectedItemChangedEventArgs e)
         {
-            Patient currentPatient = (Patient)e.SelectedItem;
+            Patient0 currentPatient = (Patient0)e.SelectedItem;
             if (currentPatient != null)
                 PatientClicked(currentPatient);
             (sender as ListView).SelectedItem = null;
         }
 
-        void PatientClicked(Patient p)
+        void PatientClicked(Patient0 p)
         {
             Navigation.PushAsync(p.DGroup);
         }
