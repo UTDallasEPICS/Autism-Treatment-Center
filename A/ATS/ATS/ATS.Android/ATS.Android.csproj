@@ -91,6 +91,5 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ATSLogo.png" />
   </ItemGroup>
-  <Import Project="..\ATS\ATS.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

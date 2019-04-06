@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ATS.ModelView {
+namespace ATS.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS/ModelView/Patien" +
-        "tView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS/View/PatientView" +
+        ".xaml")]
     public partial class PatientView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView patientList;
+        private global::Xamarin.Forms.ListView PatientList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PatientView));
-            patientList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "patientList");
+            PatientList = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "PatientList");
         }
     }
 }

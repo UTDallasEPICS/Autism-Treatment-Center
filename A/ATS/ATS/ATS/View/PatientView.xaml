@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ATS.Content.PatientContent"
-             xmlns:models="clr-namespace:ATS.Database.DataModel.DisplayModel"
-             x:Class="ATS.Content.PatientContent.PatientContentPage">
+             xmlns:local="clr-namespace:ATS.View"
+             xmlns:models="clr-namespace:ATS.Model"
+             x:Class="ATS.View.PatientView">
     
     <ContentPage.Content>
         <StackLayout Margin="20">
@@ -21,8 +21,8 @@
                     <!-- This is a template for the data in the List View ItemsSource ObervableList -->
                     <DataTemplate>
                         <!-- Information on the text displayed for every ObersvableList object -->
-                        <TextCell Text=" {Binding PatientName} " TextColor="Black"
-                                  Detail=" {Binding PatientAge} " DetailColor=" Black" />
+                        <TextCell Text=" {Binding Name} " TextColor="Black"
+                                  Detail=" {Binding Age} " DetailColor=" Black" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>

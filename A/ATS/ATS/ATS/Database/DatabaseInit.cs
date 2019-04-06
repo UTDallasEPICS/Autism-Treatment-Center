@@ -11,8 +11,13 @@ namespace ATS.Database
         //  these are static so that we can access them without instatiating an object through our whole
         //  program, and so that we only create the objects once.
 
-        /*********************************************************/
+
+
+
         /*********  Amazon cognito credentials object ************/
+
+
+
 
         //  This is the object variable for our credentials
         private static CognitoAWSCredentials _credentials;
@@ -34,8 +39,14 @@ namespace ATS.Database
             }
         }
 
-        /*********************************************************/
+
+
+
         /************   Amazong Dynambodb context   ***************/
+
+
+
+
         //  This is the context object we will use for sending and getting info from the database
 
         //  This is the object holding the client credentials for our dynamodb database
@@ -54,8 +65,13 @@ namespace ATS.Database
             }
         }
 
-        /*********************************************************/
+
+
+
         /************   Amazong Dynambodb client   ***************/
+
+
+
 
         //  This is the client object for dynamo db, which is just used to initialize the context
        public static AmazonDynamoDBClient _dynamoClient;
