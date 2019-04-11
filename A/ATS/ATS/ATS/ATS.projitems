@@ -20,12 +20,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\TaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\TeacherModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\TeacherPatientModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomainInformation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GoalInformation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PatientInformation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SubcategoryInformation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TaskInformation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TeacherInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GoalViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PatientViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SubcategoryViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TaskViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TeacherViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\PatientCreator.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\PatientView.xaml.cs">
       <DependentUpon>PatientView.xaml</DependentUpon>
@@ -36,6 +36,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BaseViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />

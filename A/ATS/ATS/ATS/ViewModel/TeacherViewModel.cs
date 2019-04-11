@@ -3,11 +3,11 @@ using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using ATS.Model;
 
-namespace ATS.Content.AppContent
+namespace ATS.ViewModel
 {
-    public class TeacherInformation
+    public class TeacherViewModel
     {
         public TeacherModel Teacher { get; set; }
-        public ObservableCollection<PatientInformation> Patients { get; set; }
+        public ObservableCollection<PatientViewModel> Patients { get; set; }
     }
 }

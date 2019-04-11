@@ -2,9 +2,7 @@
 using ATS.Model;
 using ATS.Database;
 using ATS.View;
-using ATS.Content.AppContent;
 using Xamarin.Forms;
-using ATS.Content.PatientContent;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
 

@@ -3,11 +3,11 @@ using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using ATS.Model;
 
-namespace ATS.Content.AppContent
+namespace ATS.ViewModel
 {
-    public class PatientInformation
+    public class PatientViewModel
     {
         public PatientModel Patient { get; set; }
-        public ObservableCollection<DomainInformation> Domains { get; set; }
+        public ObservableCollection<DomainViewModel> Domains { get; set; }
     }
 }

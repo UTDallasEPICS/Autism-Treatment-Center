@@ -3,11 +3,11 @@ using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using ATS.Model;
 
-namespace ATS.Content.AppContent
+namespace ATS.ViewModel
 {
-    public class DomainInformation
+    public class DomainViewModel
     {
         public DomainModel Domain { get; set; }
-        public ObservableCollection<SubcategoryInformation> Subcategories { get; set; }
+        public ObservableCollection<SubcategoryViewModel> Subcategories { get; set; }
     }
 }

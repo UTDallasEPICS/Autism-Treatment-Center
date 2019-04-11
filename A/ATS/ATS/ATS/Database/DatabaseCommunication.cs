@@ -1,7 +1,5 @@
 ﻿using System;
-using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using Amazon.DynamoDBv2.DocumentModel;
 using ATS.Model;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
@@ -14,12 +12,12 @@ namespace ATS.Database
     public class DatabaseCommunication
     {
         //  Variable holding the configuration of our dynamo function
-        private DynamoDBOperationConfig config;
+        private DynamoDBOperationConfig Config;
 
-        //  Constructor that initializes the configuration for the amazon services
+        //  Constructor that initializes the Congfiguration for the amazon services
         public DatabaseCommunication()
         {
-            config = new DynamoDBOperationConfig
+            Config = new DynamoDBOperationConfig
             {
                 IgnoreNullValues = false
             };
@@ -35,11 +33,11 @@ namespace ATS.Database
 
         //  Async Task which will save the patient passed to it to our database,
         //  Dbugging and exception calling will be done here
-        public async Task saveGenericModel<Model>(Model model)
+        public async Task saveGenericModel<TModel>(TModel Model)
         {
             Console.WriteLine("Saving generic model...");
 
-            await DatabaseInit.DynamoContext.SaveAsync<Model>(model, config);
+            await DatabaseInit.DynamoContext.SaveAsync<TModel>(Model, Config);
 
             Console.WriteLine("Generic model Saved.");
         }
@@ -52,11 +50,11 @@ namespace ATS.Database
 
 
         //  This function will take a teacherId and return the teacher with that ID
-        public async Task<Model> getGenericModel<Model>(int modelId)
+        public async Task<TModel> getGenericModel<TModel>(int modelId)
         {
             Console.WriteLine("Getting generic model...");
 
-            var search = DatabaseInit.DynamoContext.QueryAsync<Model>(modelId, config);
+            var search = DatabaseInit.DynamoContext.QueryAsync<TModel>(modelId, Config);
 
             var searchResponse = await search.GetRemainingAsync();
 
@@ -82,13 +80,13 @@ namespace ATS.Database
         //      relationId = teacherId
         //      
         //      return = ids of patients belonging to teacher
-        public async Task<List<int>> getGenericRelationIds<Relation_Table>(int relationId) 
-            where Relation_Table : IRelationInterface
+        public async Task<List<int>> getGenericRelationIds<TRelation_Table>(int relationId) 
+            where TRelation_Table : IRelationInterface
         {
             Console.WriteLine("Getting ids belonging to the generic with genericId...");
 
             //  Gets the List of ids in the relation_table belonging to relationId 
-            var search = DatabaseInit.DynamoContext.QueryAsync<Relation_Table>(relationId, config);
+            var search = DatabaseInit.DynamoContext.QueryAsync<TRelation_Table>(relationId, Config);
 
             var searchResponse = await search.GetRemainingAsync();
 
@@ -117,18 +115,18 @@ namespace ATS.Database
         //      relationId = TeacherId
         //  
         //      return = Patient objects belonging to Teacher with id TeacherId
-        public async Task<ObservableCollection<Targets>> getGenericModelBatch<Relation_Table, Targets>(int relationId)
-            where Relation_Table : IRelationInterface
+        public async Task<ObservableCollection<TTargets>> getGenericModelBatch<TRelation_Table, TTargets>(int relationId)
+            where TRelation_Table : IRelationInterface
         {
             Console.WriteLine("Getting generic objects...");
 
             //  Create list of target objects to 
-            ObservableCollection<Targets> targetObjects = new ObservableCollection<Targets>();
+            ObservableCollection<TTargets> targetObjects = new ObservableCollection<TTargets>();
 
             //  Gets the ids of the targets that we want to get
             //  uses the relationId and the relation table to find the respective targets belonging to the relation
             //  id in the relation table
-            List<int> targetIds = await getGenericRelationIds<Relation_Table>(relationId);
+            List<int> targetIds = await getGenericRelationIds<TRelation_Table>(relationId);
 
             int target_count = targetIds.Count;
 
@@ -136,7 +134,7 @@ namespace ATS.Database
             for(int target_index = 0; target_index < target_count; target_index++)
             {
                 //  gets targets from id
-                Targets pat = await getGenericModel<Targets>(targetIds[target_index]);
+                TTargets pat = await getGenericModel<TTargets>(targetIds[target_index]);
                 //  adds targets
                 targetObjects.Add(pat);
             }

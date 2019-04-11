@@ -3,11 +3,11 @@ using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using ATS.Model;
 
-namespace ATS.Content.AppContent
+namespace ATS.ViewModel
 {
-    public class GoalInformation
+    public class GoalViewModel
     {
         public GoalModel Goal { get; set; }
-        public ObservableCollection<TaskInformation> Tasks { get; set; }
+        public ObservableCollection<TaskViewModel> Tasks { get; set; }
     }
 }
