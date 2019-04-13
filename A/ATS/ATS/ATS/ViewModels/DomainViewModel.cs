@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
-using ATS.Model;
+using ATS.Models;
 
-namespace ATS.ViewModel
+namespace ATS.ViewModels
 {
     public class DomainViewModel
     {

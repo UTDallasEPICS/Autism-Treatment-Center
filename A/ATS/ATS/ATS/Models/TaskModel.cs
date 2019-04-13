@@ -1,7 +1,8 @@
 ﻿using System;
+using System.ComponentModel;
 using Amazon.DynamoDBv2.DataModel;
 
-namespace ATS.Model
+namespace ATS.Models
 {
     [DynamoDBTable("Tasks")]
     public class TaskModel : IDataModelInterface

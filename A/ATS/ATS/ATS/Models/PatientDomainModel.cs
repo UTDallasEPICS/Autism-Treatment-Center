@@ -2,10 +2,10 @@
 using Amazon.DynamoDBv2.DataModel;
 using System.Collections.Generic;
 
-namespace ATS.Model
+namespace ATS.Models
 {
-    [DynamoDBTable("Teacher-Patient")]
-    public class TeacherPatientModel : IRelationInterface
+    [DynamoDBTable("Patient-Domain")]
+    public class PatientDomainModel : IRelationInterface
     {
         [DynamoDBHashKey]
         public int Id { get; set; }

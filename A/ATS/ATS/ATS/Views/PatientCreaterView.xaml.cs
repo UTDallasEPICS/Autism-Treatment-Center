@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace ATS.Content.PatientContent
+namespace ATS.Views
 {
-    public partial class PatientCreator : ContentPage
+    public partial class PatientCreater : ContentPage
     {
-        public PatientCreator()
+        public PatientCreater()
         {
             //InitializeComponent();
         }

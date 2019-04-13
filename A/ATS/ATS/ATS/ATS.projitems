@@ -1,59 +1,63 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Configuration" />
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)View\PatientCreator.xaml" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseCommunication.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\DomainModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\DomainSubcategoryModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\GoalModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\GoalTaskModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\IDataModelInterface.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\IRelationInterface.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\PatientDomainModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\PatientModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\SubcategoryGoalModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\SubcategoryModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\TaskModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\TeacherModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\TeacherPatientModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\DomainViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\GoalViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PatientViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SubcategoryViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TaskViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TeacherViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\PatientCreator.xaml.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\PatientView.xaml.cs">
-      <DependentUpon>PatientView.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DomainModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DomainSubcategoryModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GoalModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GoalTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IDataModelInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IRelationInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PatientDomainModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PatientModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SubcategoryGoalModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SubcategoryModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TeacherModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TeacherPatientModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DomainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GoalViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PatientViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SubcategoryViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TaskViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TeacherViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PatientCreaterView.xaml.cs">
+      <DependentUpon>PatientCreaterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TeacherView.xaml.cs">
+      <DependentUpon>TeacherView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
-    <Folder Include="$(MSBuildThisFileDirectory)View\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\PatientView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PatientCreaterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TeacherView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

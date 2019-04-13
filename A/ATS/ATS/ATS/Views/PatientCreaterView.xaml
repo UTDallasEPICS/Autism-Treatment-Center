@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ATS.View.PatientCreator">
+             x:Class="ATS.Views.PatientCreater">
     
     <ContentPage.Content>
         <StackLayout Margin="20">
             
             <!-- Creates a title with font 24 -->
-            <Label Text="Patient Creator"  FontSize="34"
+            <Label Text="Patient Creater"  FontSize="34"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             

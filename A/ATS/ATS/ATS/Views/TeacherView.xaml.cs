@@ -1,20 +1,19 @@
 ﻿using System;
-using ATS.Model;
+using ATS.Models;
+using ATS.ViewModels;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 using Xamarin.Forms;
 
-namespace ATS.View
+namespace ATS.Views
 {
-    public partial class PatientView : ContentPage
+    public partial class TeacherView : ContentPage
     {
-        public PatientView(ObservableCollection<PatientModel> patients)
+        public TeacherView()
         {
             InitializeComponent();
-
-            //  Populates PatientList ListView ObservableCollection with patient objects
-            PatientList.ItemsSource = patients;
         }
 
         void AddClicked(object sender, EventArgs args)

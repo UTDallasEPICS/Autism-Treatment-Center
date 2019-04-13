@@ -1,6 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 
-namespace ATS.Model
+namespace ATS.Models
 {
     public interface IDataModelInterface
     {

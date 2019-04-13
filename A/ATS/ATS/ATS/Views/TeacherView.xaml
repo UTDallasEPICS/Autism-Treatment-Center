@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ATS.View"
-             xmlns:models="clr-namespace:ATS.Model"
-             x:Class="ATS.View.PatientView">
+             xmlns:local="clr-namespace:ATS.Views"
+             xmlns:ViewModels="clr-namespace:ATS.ViewModels"
+             x:Class="ATS.Views.TeacherView">
     
+    <!-- Sets binding context for view to respective view model -->
+    <ContentPage.BindingContext>
+        <ViewModels:TeacherViewModel/>
+    </ContentPage.BindingContext>
+        
+    <!-- Page Content -->
     <ContentPage.Content>
         <StackLayout Margin="20">
+            
             <!-- Creates a title with font 24 -->
             <Label Text="Your Patients"  FontSize="34"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <!-- Button to give the option to add a new patient -->
-            <Button Text ="Add New Patient" Clicked="AddClicked"/>
+            <Button Text ="Add Patient" Clicked="AddClicked"/>
             
             <!-- List View to hold our List of patient objects -->
-            <ListView x:Name="PatientList" Margin="0,20,0,0">
+            <ListView x:Name="PatientsListView" Margin="0,20,0,0" ItemsSource="{Binding Patients, Mode=TwoWay}">
                 <!-- List view to hold a list of patientModel objects with information -->
                 <ListView.ItemTemplate>
                     <!-- This is a template for the data in the List View ItemsSource ObervableList -->
@@ -26,6 +33,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            
         </StackLayout>
     </ContentPage.Content>
     

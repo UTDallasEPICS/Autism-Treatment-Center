@@ -1,10 +1,10 @@
 ﻿using System;
-using ATS.Model;
-using ATS.Database;
-using ATS.View;
+using ATS.Views;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
+using ATS.Database;
+using ATS.Models;
 
 namespace ATS
 {
@@ -18,14 +18,9 @@ namespace ATS
         //  make sure that if you press the button multiple times that the function won't repeatedly be called
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            //  Database communication object to interact with our database
-            DatabaseCommunication database = new DatabaseCommunication();
-
-            ObservableCollection<PatientModel> patients = await database.getGenericModelBatch<TeacherPatientModel, PatientModel>(2);
-
             //  Need to collect user login information her
 
-            await Navigation.PushAsync(new PatientView(patients)); //PatientView
+            await Navigation.PushAsync(new TeacherView()); //PatientView
         }
     }
 }

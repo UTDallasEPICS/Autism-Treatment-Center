@@ -2,7 +2,7 @@
 using Amazon.DynamoDBv2.DataModel;
 using System.Collections.Generic;
 
-namespace ATS.Model
+namespace ATS.Models
 {
     [DynamoDBTable("Domain-Subcategory")]
     public class DomainSubcategoryModel : IRelationInterface

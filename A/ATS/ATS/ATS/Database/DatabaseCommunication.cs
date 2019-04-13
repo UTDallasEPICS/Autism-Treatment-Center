@@ -1,6 +1,6 @@
 ﻿using System;
 using Amazon.DynamoDBv2.DataModel;
-using ATS.Model;
+using ATS.Models;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;

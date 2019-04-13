@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ATS.Model
+namespace ATS.Models
 {
     public interface IRelationInterface
     {

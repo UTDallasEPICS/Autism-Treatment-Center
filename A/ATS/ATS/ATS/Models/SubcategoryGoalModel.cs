@@ -2,10 +2,10 @@
 using Amazon.DynamoDBv2.DataModel;
 using System.Collections.Generic;
 
-namespace ATS.Model
+namespace ATS.Models
 {
-    [DynamoDBTable("Goal-Task")]
-    public class GoalTaskModel : IRelationInterface
+    [DynamoDBTable("Subcategory-Goal")]
+    public class SubcategoryGoalModel : IRelationInterface
     {
         [DynamoDBHashKey]
         public int Id { get; set; }
