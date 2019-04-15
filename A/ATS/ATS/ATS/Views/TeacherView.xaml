@@ -6,6 +6,8 @@
              x:Class="ATS.Views.TeacherView">
     
     <!-- Sets binding context for view to respective view model -->
+    <!-- For futute team, you could create a viewmodel locator to do this automatically
+            if you really wanted to -->
     <ContentPage.BindingContext>
         <ViewModels:TeacherViewModel/>
     </ContentPage.BindingContext>
@@ -19,10 +21,13 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <!-- Button to give the option to add a new patient -->
-            <Button Text ="Add Patient" Clicked="AddClicked"/>
+            <Button Text ="Add Patient" Clicked="AddPatientClickedAsync"/>
             
             <!-- List View to hold our List of patient objects -->
-            <ListView x:Name="PatientsListView" Margin="0,20,0,0" ItemsSource="{Binding Patients, Mode=TwoWay}">
+            <ListView x:Name="PatientsListView" 
+                      Margin="0,20,0,0" 
+                      ItemsSource="{Binding Patients, Mode=TwoWay}"
+                      ItemTapped="{Binding PatientClickedAsync}">
                 <!-- List view to hold a list of patientModel objects with information -->
                 <ListView.ItemTemplate>
                     <!-- This is a template for the data in the List View ItemsSource ObervableList -->

@@ -5,9 +5,12 @@ using ATS.Models;
 
 namespace ATS.ViewModels
 {
-    public class DomainViewModel
+    public class DomainViewModel : BaseViewModel
     {
+        public DomainModel _domain;
         public DomainModel Domain { get; set; }
-        public ObservableCollection<SubcategoryViewModel> Subcategories { get; set; }
+
+        public SubcategoryModel _subcategories;
+        public ObservableCollection<SubcategoryModel> Subcategories { get; set; }
     }
 }

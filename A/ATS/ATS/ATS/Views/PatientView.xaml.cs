@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace ATS.Views
 {
-    public partial class PatientCreater : ContentPage
+    public partial class PatientView : ContentPage
     {
-        public PatientCreater()
+        public PatientView()
         {
-            //InitializeComponent();
+            InitializeComponent();
         }
     }
 }

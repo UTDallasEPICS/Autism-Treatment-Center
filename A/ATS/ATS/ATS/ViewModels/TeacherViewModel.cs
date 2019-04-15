@@ -9,14 +9,14 @@ namespace ATS.ViewModels
 {
     public class TeacherViewModel : BaseViewModel
     {
-        public TeacherModel _teacher;
+        private static TeacherModel _teacher;
 
-        public TeacherModel Teacher 
+        public static TeacherModel Teacher 
         { 
-            get; set; 
+            get; set;
         }
 
-        public ObservableCollection<PatientModel> _patients;
+        private ObservableCollection<PatientModel> _patients;
 
         public ObservableCollection<PatientModel> Patients
         {

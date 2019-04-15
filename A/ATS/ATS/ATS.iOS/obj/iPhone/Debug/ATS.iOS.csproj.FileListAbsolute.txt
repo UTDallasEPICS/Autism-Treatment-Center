@@ -76,8 +76,8 @@
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.csproj.CoreCompileInputs.cache
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.MainPage.xaml.g.cs
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.App.xaml.g.cs
-/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.PatientCreaterView.xaml.g.cs
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.TeacherView.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.PatientCreatorView.xaml.g.cs
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.csproj.CopyComplete
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.exe
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.pdb
