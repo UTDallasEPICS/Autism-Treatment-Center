@@ -5,8 +5,8 @@ namespace ATS.Models
 {
     public interface IRelationInterface
     {
-        int Id { get; set; }
+        string Id { get; set; }
         string DateCreated { get; set; }
-        List<int> Ids { get; set; }
+        List<string> Ids { get; set; }
     }
 }

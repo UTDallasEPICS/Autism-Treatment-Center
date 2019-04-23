@@ -8,7 +8,7 @@ namespace ATS.Models
     public class GoalModel : IDataModelInterface
     {
         [DynamoDBHashKey]
-        public int Id { get; set; }
+        public string Id { get; set; }
         [DynamoDBRangeKey]
         public string Name { get; set; }
         public string Description { get; set; }

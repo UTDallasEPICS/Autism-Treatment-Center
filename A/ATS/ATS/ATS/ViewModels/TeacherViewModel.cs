@@ -10,14 +10,23 @@ namespace ATS.ViewModels
     public class TeacherViewModel : BaseViewModel
     {
         private static TeacherModel _teacher;
-
-        public static TeacherModel Teacher 
+        public static TeacherModel StaticTeacher 
         { 
-            get; set;
+            get { return _teacher; }
+            set { _teacher = value; }
+        }
+        public TeacherModel Teacher
+        {
+            get { return _teacher; }
+            set { _teacher = value; OnPropertyChanged(); }
         }
 
-        private ObservableCollection<PatientModel> _patients;
-
+        private static ObservableCollection<PatientModel> _patients;
+        public static ObservableCollection<PatientModel> StaticPatients
+        {
+            get { return _patients; }
+            set { _patients = value; }
+        }
         public ObservableCollection<PatientModel> Patients
         {
             get { return _patients; }
@@ -26,7 +35,17 @@ namespace ATS.ViewModels
 
         public TeacherViewModel()
         {
-           Initialize();
+            Teacher = new TeacherModel
+            {
+                Id = "1",
+                Name = "Teacher",
+                Age = 22,
+                Gender = "Male"
+            };
+
+            Patients = new ObservableCollection<PatientModel>();
+
+            Initialize();
         }
 
         private async Task Initialize()
@@ -34,7 +53,7 @@ namespace ATS.ViewModels
             //  Database communication object to interact with our database
             DatabaseCommunication database = new DatabaseCommunication();
 
-            Patients = await database.getGenericModelBatch<TeacherPatientModel, PatientModel>(2);
+            Patients = await database.getGenericModelBatch<TeacherPatientModel, PatientModel>(Teacher.Id);
         }
     }
 }

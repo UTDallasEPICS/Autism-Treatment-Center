@@ -21,13 +21,14 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <!-- Button to give the option to add a new patient -->
-            <Button Text ="Add Patient" Clicked="AddPatientClickedAsync"/>
+            <Button Text="Add Patient" Clicked="AddPatientClickedAsync"/>
             
             <!-- List View to hold our List of patient objects -->
             <ListView x:Name="PatientsListView" 
                       Margin="0,20,0,0" 
                       ItemsSource="{Binding Patients, Mode=TwoWay}"
-                      ItemTapped="{Binding PatientClickedAsync}">
+                      ItemTapped="PatientTappedAsync">
+                
                 <!-- List view to hold a list of patientModel objects with information -->
                 <ListView.ItemTemplate>
                     <!-- This is a template for the data in the List View ItemsSource ObervableList -->
@@ -36,6 +37,7 @@
                         <TextCell Text=" {Binding Name} " TextColor="Black"
                                   Detail=" {Binding Age} " DetailColor=" Black" />
                     </DataTemplate>
+                    
                 </ListView.ItemTemplate>
             </ListView>
             

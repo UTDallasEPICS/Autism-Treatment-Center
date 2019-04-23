@@ -21,7 +21,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GoalViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PatientViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SubcategoryViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TaskViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TeacherViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -40,6 +39,48 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\PatientView.xaml.cs">
       <DependentUpon>PatientView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PatientCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SubcategoryView.xaml.cs">
+      <DependentUpon>SubcategoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DomainView.xaml.cs">
+      <DependentUpon>DomainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DomainCreatorView.xaml.cs">
+      <DependentUpon>DomainCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DomainCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SubcategoryCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GoalCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SubcategoryCreatorView.xaml.cs">
+      <DependentUpon>SubcategoryCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GoalCreatorView.xaml.cs">
+      <DependentUpon>GoalCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TaskCreatorView.xaml.cs">
+      <DependentUpon>TaskCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GoalView.xaml.cs">
+      <DependentUpon>GoalView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DurationTaskView.xaml.cs">
+      <DependentUpon>DurationTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskView.xaml.cs">
+      <DependentUpon>FrequencyTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskView.xaml.cs">
+      <DependentUpon>OpportunityTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PassFailTaskView.xaml.cs">
+      <DependentUpon>PassFailTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FrequencyTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DurationTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OpportunityTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PassFailTaskModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
@@ -65,6 +106,50 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PatientView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SubcategoryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DomainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DomainCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SubcategoryCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GoalCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TaskCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GoalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DurationTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassFailTaskView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

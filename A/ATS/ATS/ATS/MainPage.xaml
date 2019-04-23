@@ -26,7 +26,7 @@
         <!--We might need a forgot password option-->
         
             <!--Sign In Button-->
-        <Button Clicked="Button_Clicked" Text="Sign In"></Button>
+        <Button Clicked="SignInClickedAsync" Text="Sign In"></Button>
         
     </StackLayout>
     </ScrollView>

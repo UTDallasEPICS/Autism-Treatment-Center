@@ -17,7 +17,7 @@ namespace ATS.Views
             InitializeComponent();
         }
 
-        private async void AddPatientClickedAsync(object sender, EventArgs args)
+        async void AddPatientClickedAsync(object sender, EventArgs args)
         {
             Console.WriteLine("Add Patient Clicked");
             //  pushes the PatientCreator view to the Navigation stack when the Add button is clicked
@@ -25,13 +25,15 @@ namespace ATS.Views
             await Navigation.PushAsync(new PatientCreatorView());
         }
 
-        private async void PatientClickedAsync(object sender, ItemTappedEventArgs args)
+        async void PatientTappedAsync(object sender, ItemTappedEventArgs args)
         {
             PatientModel patient = (PatientModel)args.Item;
 
-            PatientViewModel.SetStaticPatient = patient;
+            PatientViewModel.StaticPatient = patient;
 
             await Navigation.PushAsync(new PatientView());
+
+            OnPropertyChanged();
         }
     }
 }

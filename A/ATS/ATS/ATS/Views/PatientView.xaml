@@ -11,5 +11,44 @@
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
+        
+        <StackLayout Margin="20">
+        <!-- Creates a title with font 24 -->
+            <Label Text="Domains"  FontSize="34"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            
+            <!-- Button to give the option to add a new domain -->
+            <Button Text ="Add Domain" Clicked="AddDomainClickedAsync"/>
+            
+            <!-- List View to hold our List of domain objects -->
+            <ListView x:Name="DomainListView" 
+                      Margin="0,20,0,0" 
+                      ItemsSource="{Binding Domains, Mode=TwoWay}"
+                      ItemTapped="DomainTappedAsync">
+                
+                <!-- List view to hold a list of domainModel objects with information -->
+                <ListView.ItemTemplate>
+                    <!-- This is a template for the data in the List View ItemsSource ObervableList -->
+                    <DataTemplate>
+                        <!-- Information on the text displayed for every ObersvableList object -->
+                        <TextCell Text=" {Binding Name} " TextColor="Black"/>
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <!-- Footer -->
+            <StackLayout Orientation="Horizontal">
+                <!-- Button to give the option to add a new domain -->
+                <Button Text ="Aggression" HorizontalOptions="Start"/>
+                <!-- Button to give the option to add a new domain -->
+                <Button Text ="Verbal" HorizontalOptions="CenterAndExpand"/>
+                <!-- Button to give the option to add a new domain -->
+                <Button Text ="Flope" HorizontalOptions="End"/>
+            </StackLayout>
+            
+        </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

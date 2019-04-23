@@ -11,10 +11,5 @@ namespace ATS.Views
         {
             InitializeComponent();
         }
-
-        async void SavePatientClickedAsync(object sender, EventArgs args)
-        {
-            return;
-        }
     }
 }

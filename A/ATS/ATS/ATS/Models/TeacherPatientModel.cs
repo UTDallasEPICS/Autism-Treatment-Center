@@ -8,8 +8,8 @@ namespace ATS.Models
     public class TeacherPatientModel : IRelationInterface
     {
         [DynamoDBHashKey]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string DateCreated { get; set; }
-        public List<int> Ids { get; set; }
+        public List<string> Ids { get; set; }
     }
 }

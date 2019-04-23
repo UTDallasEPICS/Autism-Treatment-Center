@@ -10,7 +10,7 @@ namespace ATS.Models
     public class PatientModel : IDataModelInterface
     {
         [DynamoDBHashKey]
-        public int Id { get; set; }
+        public string Id { get; set; }
         [DynamoDBRangeKey]
         public string Name { get; set; }
         public int Age { get; set; }

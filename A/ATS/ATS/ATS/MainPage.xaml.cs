@@ -16,11 +16,11 @@ namespace ATS
         }
 
         //  make sure that if you press the button multiple times that the function won't repeatedly be called
-        private async void Button_Clicked(object sender, EventArgs e)
+        async void SignInClickedAsync(object sender, EventArgs e)
         {
             //  Need to collect user login information her
 
-            await Navigation.PushAsync(new TeacherView()); //PatientView
+            Navigation.PushAsync(new TeacherView()); //PatientView
         }
     }
 }
