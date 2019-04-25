@@ -9,6 +9,12 @@ namespace ATS.ViewModels
 {
     public class PatientViewModel : BaseViewModel
     {
+        private bool _isbusy = false;
+        public bool IsBusy
+        {
+            get { return _isbusy; }
+            set { _isbusy = value; OnPropertyChanged(); }
+        }
         //  Patient
         private static PatientModel _patient;
         public static PatientModel StaticPatient
@@ -39,16 +45,18 @@ namespace ATS.ViewModels
         public PatientViewModel()
         {
             Domains = new ObservableCollection<DomainModel>();
-
             Initialize();
         }
 
         private async Task Initialize()
         {
+            IsBusy = true;
+
             //  Database communication object to interact with our database
             DatabaseCommunication database = new DatabaseCommunication();
-
             Domains = await database.getGenericModelBatch<PatientDomainModel, DomainModel>(Patient.Id);
+
+            IsBusy = false;
         }
     }
 }

@@ -26,7 +26,6 @@
                        HorizontalOptions="EndAndExpand"></Entry>
             </StackLayout>   
             
-            <!-- Maybe use a selector wheel for this instead of entry -->
             
             <StackLayout Orientation="Horizontal">
                 <Label HorizontalOptions="Start" HeightRequest="30">Description</Label>
@@ -34,6 +33,15 @@
                        WidthRequest="200" 
                        HorizontalOptions="EndAndExpand"></Entry>
             </StackLayout>   
+            
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start" HeightRequest="30">Task</Label>
+                <Picker Title="Select A Type"
+                        ItemsSource="{Binding TaskTypes}"
+                        SelectedItem="{Binding Type, Mode=TwoWay}"
+                        HorizontalOptions="EndAndExpand"
+                        WidthRequest="200"/>
+            </StackLayout> 
             
             <!-- Button for when the user is done entering patient information -->
             <Button Command="{Binding SaveTaskCommand}" Text="Save" 

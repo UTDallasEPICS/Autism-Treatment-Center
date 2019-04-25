@@ -24,11 +24,33 @@ namespace ATS.Views
 
         async void TaskTappedAsync(object sender, ItemTappedEventArgs args)
         {
-            TaskModel subcategory = (TaskModel)args.Item;
+            TaskModel task = (TaskModel)args.Item;
 
-            //TaskViewModel.StaticTask = subcategory;
+            /*
+            //  switch statment to launch the correct view for the respective TaskModel variant
+            switch (task.Type)
+            {
+                case "Duration":
+                    DurationTaskView.StaticDurationTask = (DurationTaskModel)task;
+                    await Navigation.PushAsync(new DurationTaskView());
+                    break;
 
-            await Navigation.PushAsync(new TaskView());
+                case "Frequency":
+                    FrequencyTaskView.StaticFrequencyTask = (FrequencyTaskModel)task;
+                    await Navigation.PushAsync(new FrequencyTaskView());
+                    break;
+
+                case "Opportunity":
+                    OpportunityTaskView.StaticOpportunityTask = (OpportunityTaskModel)task;
+                    await Navigation.PushAsync(new OpportunityTaskView());
+                    break;
+
+                case "PassFail":
+                    PassFailTaskView.StaticPassFailTask = (PassFailTaskModel)task;
+                    await Navigation.PushAsync(new PassFailTaskView());
+                    break;
+            }
+            */
 
             OnPropertyChanged();
         }

@@ -23,6 +23,13 @@
             <!-- Button to give the option to add a new patient -->
             <Button Text="Add Patient" Clicked="AddPatientClickedAsync"/>
             
+            <!-- Activity indicator, showing loading animation when IsBusy is true -->
+            <ActivityIndicator IsRunning="{Binding IsBusy}"
+                               IsVisible="{Binding IsBusy}"
+                               HeightRequest="40"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"/>
+            
             <!-- List View to hold our List of patient objects -->
             <ListView x:Name="PatientsListView" 
                       Margin="0,20,0,0" 

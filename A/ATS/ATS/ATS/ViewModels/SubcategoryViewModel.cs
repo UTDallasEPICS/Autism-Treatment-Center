@@ -9,6 +9,13 @@ namespace ATS.ViewModels
 {
     public class SubcategoryViewModel : BaseViewModel
     {
+        private bool _isbusy = false;
+        public bool IsBusy
+        {
+            get { return _isbusy; }
+            set { _isbusy = value; OnPropertyChanged(); }
+        }
+
         public static SubcategoryModel _subcategory;
         public static SubcategoryModel StaticSubcategory
         {

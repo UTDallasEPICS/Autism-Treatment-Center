@@ -81,6 +81,26 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\DurationTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\OpportunityTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\PassFailTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DurationTaskCreator.xaml.cs">
+      <DependentUpon>DurationTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskCreator.xaml.cs">
+      <DependentUpon>FrequencyTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskCreator.xaml.cs">
+      <DependentUpon>OpportunityTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PassFailTaskCreator.xaml.cs">
+      <DependentUpon>PassFailTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DurationTaskViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FrequencyTaskViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OpportunityViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DurationTaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FrequencyTaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OpportunityTaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailTaskCreatorViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
@@ -150,6 +170,22 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassFailTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DurationTaskCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassFailTaskCreator.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

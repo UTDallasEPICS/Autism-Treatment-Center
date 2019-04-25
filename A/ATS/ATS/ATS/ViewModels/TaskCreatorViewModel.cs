@@ -3,6 +3,7 @@ using ATS.Models;
 using ATS.Database;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -26,10 +27,25 @@ namespace ATS.ViewModels
             get { return _description; }
             set { _description = value; OnPropertyChanged(); }
         }
+        private ObservableCollection<string> _tasktypes;
+        public ObservableCollection<string> TaskTypes
+        {
+            get { return _tasktypes; }
+            set { _tasktypes = value;  OnPropertyChanged(); }
+        }
+        private string _type;
+        public string Type
+        {
+            get { return _type; }
+            set { _type = value;  OnPropertyChanged(); }
+        }
 
         //  Constructor
         public TaskCreatorViewModel()
         {
+            string[] TaskNames = { "Duration", "Frequency", "Opportunity", "PassFail" };
+            TaskTypes = new ObservableCollection<string>(TaskNames);
+
             SaveTaskCommand = new Command(async () => await SaveTaskAsync());
         }
 
@@ -41,7 +57,8 @@ namespace ATS.ViewModels
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = Name,
-                Description = Description
+                Description = Description,
+                Type = Type.ToString()
             };
 
             //  adds patient to our patient collection
@@ -60,5 +77,7 @@ namespace ATS.ViewModels
             Name = "";
             Description = "";
         }
+
+
     }
 }

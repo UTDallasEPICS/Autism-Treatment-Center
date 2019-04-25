@@ -9,6 +9,13 @@ namespace ATS.ViewModels
 {
     public class DomainViewModel : BaseViewModel
     {
+        private bool _isbusy = false;
+        public bool IsBusy
+        {
+            get { return _isbusy; }
+            set { _isbusy = value; OnPropertyChanged(); }
+        }
+
         //  domain
         private static DomainModel _domain;
         public static DomainModel StaticDomain
@@ -45,10 +52,14 @@ namespace ATS.ViewModels
 
         private async Task Initialize()
         {
+            IsBusy = true;
+
             //  Database communication object to interact with our database
             DatabaseCommunication database = new DatabaseCommunication();
 
             Subcategories = await database.getGenericModelBatch<DomainSubcategoryModel, SubcategoryModel>(Domain.Id);
+
+            IsBusy = false;
         }
     }
 }

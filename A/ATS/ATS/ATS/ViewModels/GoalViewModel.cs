@@ -9,6 +9,13 @@ namespace ATS.ViewModels
 {
     public class GoalViewModel : BaseViewModel
     {
+        private bool _isbusy = false;
+        public bool IsBusy
+        {
+            get { return _isbusy; }
+            set { _isbusy = value; OnPropertyChanged(); }
+        }
+
         //  Goal
         private static GoalModel _goal;
         public static GoalModel StaticGoal
@@ -45,10 +52,14 @@ namespace ATS.ViewModels
 
         private async Task Initialize()
         {
+            IsBusy = true;
+
             //  Database communication object to interact with our database
             DatabaseCommunication database = new DatabaseCommunication();
 
             Tasks = await database.getGenericModelBatch<GoalTaskModel, TaskModel>(Goal.Id);
+
+            IsBusy = false;
         }
     }
 }

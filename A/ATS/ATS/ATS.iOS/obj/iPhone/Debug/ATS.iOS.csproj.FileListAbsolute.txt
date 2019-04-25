@@ -83,7 +83,14 @@
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/GoalCreatorView.xaml.g.cs
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/TaskCreatorView.xaml.g.cs
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/GoalView.xaml.g.cs
-/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/TaskView.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/DurationTaskView.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/FrequencyTaskView.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/OpportunityTaskView.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/PassFailTaskView.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/DurationTaskCreator.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/FrequencyTaskCreator.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/OpportunityTaskCreator.xaml.g.cs
+/Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/Views/PassFailTaskCreator.xaml.g.cs
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.csproj.CoreCompileInputs.cache
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/XamlC.stamp
 /Users/Eman/Desktop/Autism-Treatment-Center-master/A/ATS/ATS/ATS.iOS/obj/iPhone/Debug/ATS.iOS.csproj.CopyComplete
