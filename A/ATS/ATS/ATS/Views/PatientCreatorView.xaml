@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -54,4 +55,61 @@
         </StackLayout>
     </ContentPage.Content>
     
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ATS.Views"
+             xmlns:ViewModels="clr-namespace:ATS.ViewModels"
+             x:Class="ATS.Views.PatientCreatorView">
+    
+    <ContentPage.BindingContext>
+        <ViewModels:PatientCreatorViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="20, 20, 20, 0">
+            
+            <!-- Creates a title with font 24 -->
+            <Label Text="Patient Creator"  FontSize="34"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand" />
+            
+            <!-- Horizontal stack layout for each entry, so place it in this format:
+                    <Label> <Entry input location> -->
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start" HeightRequest="30">Name</Label>
+                <Entry Text="{Binding Name, Mode=TwoWay}"
+                       WidthRequest="200" 
+                       HorizontalOptions="EndAndExpand"></Entry>
+            </StackLayout>   
+            
+            <!-- Maybe use a selector wheel for this instead of entry -->
+            
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start" HeightRequest="30">Age</Label>
+                <Entry Text="{Binding Age, Mode=TwoWay}"
+                       WidthRequest="200" 
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="EndAndExpand"></Entry>
+            </StackLayout>   
+            
+            <!-- Maybe use a picker for gender instead of entry -->
+            
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start" HeightRequest="30">Gender</Label>
+                <Entry Text="{Binding Gender, Mode=TwoWay}"
+                       WidthRequest="200" 
+                       HorizontalTextAlignment="Center" 
+                       HorizontalOptions="EndAndExpand"></Entry>   
+            </StackLayout>
+            
+            <!-- Button for when the user is done entering patient information -->
+            <Button Command="{Binding SavePatientCommand}" Text="Save" 
+                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+    
+>>>>>>> bfba3366fff92621098ea1d07abe01a4b7d70925
 </ContentPage>
