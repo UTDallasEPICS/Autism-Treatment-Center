@@ -19,8 +19,10 @@ namespace ATS
         async void SignInClickedAsync(object sender, EventArgs e)
         {
             //  Need to collect user login information her
+            string user = User.Text;
+            string pass = Pass.Text;
 
-            Navigation.PushAsync(new TeacherView()); //PatientView
+            await Navigation.PushAsync(new TeacherView()); //PatientView
         }
     }
 }

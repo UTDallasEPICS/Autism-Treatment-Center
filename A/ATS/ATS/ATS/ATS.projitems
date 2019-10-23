@@ -10,6 +10,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\GoalTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IDataModelInterface.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IRelationInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LoginModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\PatientDomainModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\PatientModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\SubcategoryGoalModel.cs" />
@@ -19,13 +20,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\TeacherPatientModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DomainViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GoalViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PatientViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SubcategoryViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TeacherViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-	<Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
@@ -104,9 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
-    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
