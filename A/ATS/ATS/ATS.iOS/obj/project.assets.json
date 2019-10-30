@@ -1254,21 +1254,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\De Khung\\.nuget\\packages\\": {}
+    "C:\\Users\\Byron\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\De Khung\\source\\repos\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Byron\\Desktop\\Autism Treatment Center Project\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
       "projectName": "ATS.iOS",
-      "projectPath": "C:\\Users\\De Khung\\source\\repos\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
-      "packagesPath": "C:\\Users\\De Khung\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\De Khung\\source\\repos\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Byron\\Desktop\\Autism Treatment Center Project\\A\\ATS\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "packagesPath": "C:\\Users\\Byron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Byron\\Desktop\\Autism Treatment Center Project\\A\\ATS\\ATS\\ATS.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\De Khung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Byron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"

@@ -428,6 +428,7 @@
         "awssdk.core.nuspec",
         "lib/MonoAndroid10/AWSSDK.Core.XML",
         "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.dll.mdb",
         "lib/MonoAndroid10/AWSSDK.Core.pdb",
         "lib/MonoTouch10/AWSSDK.Core.XML",
         "lib/MonoTouch10/AWSSDK.Core.dll",
@@ -894,14 +895,18 @@
         "lib/MonoAndroid10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10/FormsViewGroup.dll",
+        "lib/MonoAndroid10/FormsViewGroup.dll.mdb",
         "lib/MonoAndroid10/FormsViewGroup.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Core.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Core.xml",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.Android.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Platform.dll",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.Xaml.dll.mdb",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.pdb",
         "lib/MonoAndroid10/Xamarin.Forms.Xaml.xml",
         "lib/WP80/Design/Xamarin.Forms.Core.Design.dll",
@@ -1063,21 +1068,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\De Khung\\.nuget\\packages\\": {}
+    "C:\\Users\\Byron\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\De Khung\\source\\repos\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Byron\\Desktop\\Autism Treatment Center Project\\A\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
       "projectName": "ATS.Android",
-      "projectPath": "C:\\Users\\De Khung\\source\\repos\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
-      "packagesPath": "C:\\Users\\De Khung\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\De Khung\\source\\repos\\Autism-Treatment-Center\\A\\ATS\\ATS\\ATS.Android\\obj\\",
+      "projectPath": "C:\\Users\\Byron\\Desktop\\Autism Treatment Center Project\\A\\ATS\\ATS\\ATS.Android\\ATS.Android.csproj",
+      "packagesPath": "C:\\Users\\Byron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Byron\\Desktop\\Autism Treatment Center Project\\A\\ATS\\ATS\\ATS.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\De Khung\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Byron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid80"
