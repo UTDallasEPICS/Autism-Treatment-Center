@@ -1,0 +1,192 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Configuration" />
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseCommunication.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BehaviorModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DomainSubcategoryModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GoalModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GoalTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IDataModelInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IRelationInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PatientBehaviorModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PatientModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SubcategoryGoalModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SubcategoryModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TeacherModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TeacherPatientModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BehaviorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GoalViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PatientViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SubcategoryViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TeacherViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TeacherView.xaml.cs">
+      <DependentUpon>TeacherView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BaseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PatientCreatorView.xaml.cs">
+      <DependentUpon>PatientCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PatientView.xaml.cs">
+      <DependentUpon>PatientView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PatientCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SubcategoryView.xaml.cs">
+      <DependentUpon>SubcategoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BehaviorView.xaml.cs">
+      <DependentUpon>BehaviorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BehaviorCreatorView.xaml.cs">
+      <DependentUpon>BehaviorCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BehaviorCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SubcategoryCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\GoalCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SubcategoryCreatorView.xaml.cs">
+      <DependentUpon>SubcategoryCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GoalCreatorView.xaml.cs">
+      <DependentUpon>GoalCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TaskCreatorView.xaml.cs">
+      <DependentUpon>TaskCreatorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\GoalView.xaml.cs">
+      <DependentUpon>GoalView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DurationTaskView.xaml.cs">
+      <DependentUpon>DurationTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskView.xaml.cs">
+      <DependentUpon>FrequencyTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskView.xaml.cs">
+      <DependentUpon>OpportunityTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PassFailTaskView.xaml.cs">
+      <DependentUpon>PassFailTaskView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FrequencyTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DurationTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OpportunityTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PassFailTaskModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DurationTaskCreator.xaml.cs">
+      <DependentUpon>DurationTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskCreator.xaml.cs">
+      <DependentUpon>FrequencyTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskCreator.xaml.cs">
+      <DependentUpon>OpportunityTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PassFailTaskCreator.xaml.cs">
+      <DependentUpon>PassFailTaskCreator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DurationTaskViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FrequencyTaskViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OpportunityViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DurationTaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FrequencyTaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OpportunityTaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailTaskCreatorViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Database\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TeacherView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PatientCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PatientView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SubcategoryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\BehaviorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\BehaviorCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SubcategoryCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GoalCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TaskCreatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GoalView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DurationTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassFailTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DurationTaskCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\OpportunityTaskCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassFailTaskCreator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
