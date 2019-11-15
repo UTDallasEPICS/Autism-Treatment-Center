@@ -1,7 +1,7 @@
 BundleAssemblies=false
 AotAssemblies=false
 AndroidAotMode=
-AndroidEnableProfiledAot=
+AndroidEnableProfiledAot=false
 ExplicitCrunch=false
 AndroidDexTool=dx
 AndroidLinkTool=

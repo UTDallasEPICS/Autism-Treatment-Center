@@ -11,7 +11,6 @@ public class ViewCellRenderer_ViewCellContainer
 	static {
 		__md_methods = 
 			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
-			"n_dispatchTouchEvent:(Landroid/view/MotionEvent;)Z:GetDispatchTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"";
@@ -57,14 +56,6 @@ public class ViewCellRenderer_ViewCellContainer
 	}
 
 	private native boolean n_onInterceptTouchEvent (android.view.MotionEvent p0);
-
-
-	public boolean dispatchTouchEvent (android.view.MotionEvent p0)
-	{
-		return n_dispatchTouchEvent (p0);
-	}
-
-	private native boolean n_dispatchTouchEvent (android.view.MotionEvent p0);
 
 
 	public void onLayout (boolean p0, int p1, int p2, int p3, int p4)

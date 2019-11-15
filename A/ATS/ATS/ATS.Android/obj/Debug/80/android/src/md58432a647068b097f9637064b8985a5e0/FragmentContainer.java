@@ -10,6 +10,8 @@ public class FragmentContainer
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_getUserVisibleHint:()Z:GetGetUserVisibleHintHandler\n" +
+			"n_setUserVisibleHint:(Z)V:GetSetUserVisibleHint_ZHandler\n" +
 			"n_onCreateView:(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;:GetOnCreateView_Landroid_view_LayoutInflater_Landroid_view_ViewGroup_Landroid_os_Bundle_Handler\n" +
 			"n_onDestroyView:()V:GetOnDestroyViewHandler\n" +
 			"n_onHiddenChanged:(Z)V:GetOnHiddenChanged_ZHandler\n" +
@@ -26,6 +28,22 @@ public class FragmentContainer
 		if (getClass () == FragmentContainer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.AppCompat.FragmentContainer, Xamarin.Forms.Platform.Android", "", this, new java.lang.Object[] {  });
 	}
+
+
+	public boolean getUserVisibleHint ()
+	{
+		return n_getUserVisibleHint ();
+	}
+
+	private native boolean n_getUserVisibleHint ();
+
+
+	public void setUserVisibleHint (boolean p0)
+	{
+		n_setUserVisibleHint (p0);
+	}
+
+	private native void n_setUserVisibleHint (boolean p0);
 
 
 	public android.view.View onCreateView (android.view.LayoutInflater p0, android.view.ViewGroup p1, android.os.Bundle p2)

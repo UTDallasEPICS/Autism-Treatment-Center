@@ -22,7 +22,8 @@
             <StackLayout Orientation="Horizontal">
                 <Label HorizontalOptions="Start" HeightRequest="30">Name</Label>
                 <Entry Text="{Binding Name, Mode=TwoWay}"
-                       WidthRequest="200" 
+                       WidthRequest="200"
+                       HorizontalTextAlignment="Center"
                        HorizontalOptions="EndAndExpand"></Entry>
             </StackLayout>   
             

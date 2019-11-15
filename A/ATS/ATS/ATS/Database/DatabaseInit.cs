@@ -29,11 +29,18 @@ namespace ATS.Database
             get {
                 if (_credentials == null) 
                 {
-                    // Initialize the Amazon Cognito credentials provider
-                    _credentials = new CognitoAWSCredentials(
-                        DatabaseInfo.COGNITO_IDENTITY_POOL_ID, // Identity pool ID
-                        DatabaseInfo.COGNITO_REGION_ENDPOINT// Region
-                    );
+                    try
+                    {
+                        // Initialize the Amazon Cognito credentials provider
+                        _credentials = new CognitoAWSCredentials(
+                            DatabaseInfo.COGNITO_IDENTITY_POOL_ID, // Identity pool ID
+                            DatabaseInfo.COGNITO_REGION_ENDPOINT// Region
+                        );
+                    }
+                    catch(Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
                 }
                 return _credentials;
             }
@@ -65,7 +72,10 @@ namespace ATS.Database
             }
         }
 
-
+        public static DynamoDBContext getContext()
+        {
+            return DatabaseInit.DynamoContext;
+        }
 
 
         /************   Amazong Dynambodb client   ***************/
@@ -88,5 +98,7 @@ namespace ATS.Database
                 return _dynamoClient;
             }
         }
+
+        
     }
 }

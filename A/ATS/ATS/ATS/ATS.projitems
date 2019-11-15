@@ -1,6 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Configuration" />
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Custom UI\CustomEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseCommunication.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
@@ -10,6 +11,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\GoalTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IDataModelInterface.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IRelationInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Login.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\PatientDomainModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\PatientModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\SubcategoryGoalModel.cs" />
@@ -25,7 +27,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-	<Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BaseViewModel.cs" />
@@ -103,8 +105,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailTaskCreatorViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Database\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
     <Folder Include="$(MSBuildThisFileDirectory)Views\" />
     <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
   </ItemGroup>

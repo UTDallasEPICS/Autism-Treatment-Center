@@ -13,12 +13,12 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)xamarin.forms\2.5.1.527436\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\2.5.1.527436\build\netstandard1.0\Xamarin.Forms.props')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\2.5.0.77107\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\2.5.0.77107\build\netstandard1.0\Xamarin.Forms.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.core\3.3.103.34</PkgAWSSDK_Core>
-    <PkgAWSSDK_SecurityToken Condition=" '$(PkgAWSSDK_SecurityToken)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.securitytoken\3.3.102.19</PkgAWSSDK_SecurityToken>
-    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.dynamodbv2\3.3.101.61</PkgAWSSDK_DynamoDBv2>
-    <PkgAWSSDK_CognitoIdentity Condition=" '$(PkgAWSSDK_CognitoIdentity)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.cognitoidentity\3.3.100.70</PkgAWSSDK_CognitoIdentity>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.core\3.3.103.62</PkgAWSSDK_Core>
+    <PkgAWSSDK_SecurityToken Condition=" '$(PkgAWSSDK_SecurityToken)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.securitytoken\3.3.103.11</PkgAWSSDK_SecurityToken>
+    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.dynamodbv2\3.3.101.88</PkgAWSSDK_DynamoDBv2>
+    <PkgAWSSDK_CognitoIdentity Condition=" '$(PkgAWSSDK_CognitoIdentity)' == '' ">C:\Users\Byron\.nuget\packages\awssdk.cognitoidentity\3.3.101</PkgAWSSDK_CognitoIdentity>
   </PropertyGroup>
 </Project>

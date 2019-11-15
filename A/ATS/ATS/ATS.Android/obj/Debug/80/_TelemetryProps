@@ -20,6 +20,6 @@ ClassParser=
 CodegenTarget=
 AndroidDexTool=dx
 AndroidLinkTool=
-AndroidEnableProfiledAot=
+AndroidEnableProfiledAot=false
 BuildConfiguration=Debug
 TemplateName=

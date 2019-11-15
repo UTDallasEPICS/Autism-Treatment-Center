@@ -1,10 +1,17 @@
 ﻿using System;
+using System.Net;
+using System.Threading.Tasks;
+using Amazon.Runtime;
 using ATS.Views;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
 using ATS.Database;
 using ATS.Models;
+using ATSApp.CustomUI;
+using ATS.Database.DBQueryUser;
+
 
 namespace ATS
 {
@@ -13,14 +20,54 @@ namespace ATS
         public MainPage()
         {
             InitializeComponent();
+            
+            BtnLogin.Clicked += async (source, args) =>
+            {
+                await BtnLoginClickListener();
+            };
+            
         }
 
-        //  make sure that if you press the button multiple times that the function won't repeatedly be called
-        async void SignInClickedAsync(object sender, EventArgs e)
+        private async Task BtnLoginClickListener()
         {
-            //  Need to collect user login information her
+            try
+            {
+                //var user = getUserFromEntry();
+                string username = EntryUsername.Text.Trim();
+                if (String.IsNullOrEmpty(username))
+                    throw new Exception("Please enter username");
 
-            Navigation.PushAsync(new TeacherView()); //PatientView
+                DatabaseCommunication query = new DatabaseCommunication();
+                var user = await query.getGenericModel<Login>(username);
+
+                if (checkPasswordforUser(user) == false)
+                    throw new Exception("Login failed");
+                else
+                {
+                    Navigation.PushAsync(new TeacherView());
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
+       
+        private bool checkPasswordforUser(Login login)
+        {
+            string password = EntryPassword.Text.Trim();
+            if (String.IsNullOrEmpty(password))
+            {
+                throw new Exception("Please enter password");
+                return false;
+            }
+            if (!password.Equals(login.Password))
+            {
+                throw new Exception("Password was not correct");
+                return false;
+            }
+            return true;
+        }
+
     }
 }

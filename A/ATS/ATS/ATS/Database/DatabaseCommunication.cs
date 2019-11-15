@@ -219,5 +219,23 @@ namespace ATS.Database
 
             return targetObjects;
         }
+
+        public async Task<T> LoadData<T>(string username)
+        {
+            try
+            {
+                //var context = DatabaseInit.DynamoContext.getContext();
+                var returnedValue = DatabaseInit.DynamoContext.QueryAsync<T>(username, Config);
+                var realReturnedValue = await returnedValue.GetRemainingAsync();
+
+                return realReturnedValue[0];
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception CAUGHT: " + e.Message);
+                throw new Exception("Exception CAUGHT: " + e.Message);
+            }
+        }
     }
 }

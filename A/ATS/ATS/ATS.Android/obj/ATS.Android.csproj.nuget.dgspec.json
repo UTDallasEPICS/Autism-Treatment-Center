@@ -40,39 +40,39 @@
           "dependencies": {
             "AWSSDK.CognitoIdentity": {
               "target": "Package",
-              "version": "[3.3.100.70, )"
+              "version": "[3.3.101, )"
             },
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.3.103.34, )"
+              "version": "[3.3.103.62, )"
             },
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.3.101.61, )"
+              "version": "[3.3.101.88, )"
             },
             "Xamarin.Android.Support.Design": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v4": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.AppCompat": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.CardView": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.MediaRouter": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[2.5.1.527436, )"
+              "version": "[2.5.0.77107, )"
             }
           }
         }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ATS"
+             xmlns:local="clr-namespace:ATSApp.CustomUI"
              x:Class="ATS.MainPage">
     <ScrollView>
     <StackLayout>
@@ -20,13 +20,21 @@
         
         <!--This is the markup for the username and password entry
             Placeholder = text doesn't need to be deleted, it's just in the background
-            IsPassord = When inputing the password, chars turn into dots -->
-        <Entry Placeholder="Username"></Entry>
-        <Entry IsPassword="true" Placeholder="Password"></Entry>
-        <!--We might need a forgot password option-->
+            IsPassword = When inputing the password, chars turn into dots -->
+        <Label Text=""></Label>
+            <local:CustomEntry x:Name="EntryUsername"
+                               Placeholder="Username"></local:CustomEntry>
+
+
+        <Label Text=""></Label>
+            <local:CustomEntry x:Name="EntryPassword"
+                                IsPassword="true" 
+                                Placeholder="Password"></local:CustomEntry>
+            <!--We might need a forgot password option-->
         
             <!--Sign In Button-->
-        <Button Clicked="SignInClickedAsync" Text="Sign In"></Button>
+        <Button x:Name="BtnLogin"
+                Text="Sign In"></Button>
         
     </StackLayout>
     </ScrollView>
