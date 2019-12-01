@@ -12,11 +12,11 @@ namespace ATS.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS\\Views\\PassFailTaskCreator.xaml")]
-    public partial class PassFailTaskCreator : global::Xamarin.Forms.ContentPage {
+    public partial class PassFailTaskView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PassFailTaskCreator));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PassFailTaskView));
         }
     }
 }

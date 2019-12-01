@@ -13,16 +13,12 @@
 namespace ATS.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS\\Views\\BehaviorView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS\\Views\\BehaviorView.xaml")]
     public partial class BehaviorView : global::Xamarin.Forms.ContentPage {
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.ListView SubcategoryListView;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(BehaviorView));
-            SubcategoryListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "SubcategoryListView");
         }
     }
 }

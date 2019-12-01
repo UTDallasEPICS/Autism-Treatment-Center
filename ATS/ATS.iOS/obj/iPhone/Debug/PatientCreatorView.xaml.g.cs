@@ -13,7 +13,8 @@
 namespace ATS.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS\\Views\\PatientCreatorView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS\\Views\\PatientCreatorView." +
+        "xaml")]
     public partial class PatientCreatorView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

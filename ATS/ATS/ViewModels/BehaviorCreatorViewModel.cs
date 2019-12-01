@@ -28,6 +28,8 @@ namespace ATS.ViewModels
             set { _description = value; OnPropertyChanged(); }
         }
 
+        //Stores and displays Task Types
+
         private ObservableCollection<string> _tasktypes;
 
         public ObservableCollection<string> TaskTypes
@@ -35,6 +37,15 @@ namespace ATS.ViewModels
             get { return _tasktypes; }
             set { _tasktypes = value; OnPropertyChanged(); }
         }
+
+        //Get the task that is chosen
+        private string _type;
+        public string Type
+        {
+            get { return _type; }
+            set { _type = value; OnPropertyChanged(); }
+        }
+
 
         public BehaviorCreatorViewModel()
         {
@@ -50,8 +61,10 @@ namespace ATS.ViewModels
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = Name,
-                Description = Description
-            };
+                Active = true,
+                Description = Description,
+                Task = Type
+        };
 
             //  adds patient to our patient collection
             PatientViewModel.StaticBehavior.Add(Behavior_To_Add);

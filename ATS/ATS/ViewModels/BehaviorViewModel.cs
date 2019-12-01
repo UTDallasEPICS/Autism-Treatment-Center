@@ -29,24 +29,9 @@ namespace ATS.ViewModels
             set { _Behavior = value; OnPropertyChanged(); }
         }
 
-        //  subcategories
-        /*
-        private static ObservableCollection<SubcategoryModel> _subcategories;
-        public static ObservableCollection<SubcategoryModel> StaticSubcategories
-        {
-            get { return _subcategories; }
-            set { _subcategories = value; }
-        }
-        public ObservableCollection<SubcategoryModel> Subcategories
-        {
-            get { return _subcategories; }
-            set { _subcategories = value; OnPropertyChanged(); }
-        } */
-
-        //  Constructor and Respective functions
         public BehaviorViewModel()
         {
-           //Subcategories = new ObservableCollection<SubcategoryModel>();
+           //Tasks = new ObservableCollection<TaskModel>();
 
 
             Initialize();
@@ -58,10 +43,22 @@ namespace ATS.ViewModels
 
             //  Database communication object to interact with our database
             DatabaseCommunication database = new DatabaseCommunication();
+            
+            if(Behavior.Task == "Duration")
+            {
+                await database.getGenericModelBatch<BehaviorDurationTaskModel, DurationTaskModel>(Behavior.Id);
+            }
+            if (Behavior.Task == "Frequency")
+            {
+                await database.getGenericModelBatch<BehaviorFrequencyTaskModel, FrequencyTaskModel>(Behavior.Id);
+            }
+            if (Behavior.Task == "PassFail")
+            {
+                await database.getGenericModelBatch<BehaviorPassFailTaskModel, PassFailTaskModel>(Behavior.Id);
+            }
 
 
-
-            //Subcategories = await database.getGenericModelBatch<BehaviorSubcategoryModel, SubcategoryModel>(Behavior.Id);
+            //Tasks = await database.getGenericModelBatch<BehaviorSubcategoryModel, SubcategoryModel>(Behavior.Id);
 
             IsBusy = false;
         }

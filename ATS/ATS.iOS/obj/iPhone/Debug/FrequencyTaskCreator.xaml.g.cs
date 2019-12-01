@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ATS.iOS.FrequencyTaskCreator.xaml", "FrequencyTaskCreator.xaml", typeof(global::ATS.Views.FrequencyTaskCreator))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ATS.iOS.FrequencyTaskCreator.xaml", "FrequencyTaskCreator.xaml", typeof(global::ATS.Views.FrequencyTaskView))]
 
 namespace ATS.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS\\Views\\FrequencyTaskCreator.xaml")]
-    public partial class FrequencyTaskCreator : global::Xamarin.Forms.ContentPage {
+    public partial class FrequencyTaskView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FrequencyTaskCreator));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FrequencyTaskView));
         }
     }
 }

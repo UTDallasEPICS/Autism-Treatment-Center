@@ -1069,11 +1069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS.Android\\ATS.Android.csproj",
+      "projectUniqueName": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.Android\\ATS.Android.csproj",
       "projectName": "ATS.Android",
-      "projectPath": "C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS.Android\\ATS.Android.csproj",
+      "projectPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.Android\\ATS.Android.csproj",
       "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS.Android\\obj\\",
+      "outputPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

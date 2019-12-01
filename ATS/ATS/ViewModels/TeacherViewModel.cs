@@ -45,8 +45,8 @@ namespace ATS.ViewModels
             Teacher = new TeacherModel
             {
                 Id = "37d39648-7f9d-4a6e-bcf8-64ef59e47bc1",
-                Name = "Teacher",
-                Age = 22,
+                Name = "Eman",
+                Age = 19,
                 Gender = "Male"
             };
 

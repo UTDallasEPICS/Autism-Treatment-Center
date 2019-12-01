@@ -26,7 +26,20 @@ namespace ATS.Views
 
             BehaviorViewModel.StaticBehavior = Behavior;
 
-            await Navigation.PushAsync(new BehaviorView());
+            if (Behavior.Task.Equals("Duration"))
+            {
+                await Navigation.PushAsync(new DurationTaskView());
+            }
+            if (Behavior.Task.Equals("Frequency"))
+            {
+                await Navigation.PushAsync(new FrequencyTaskView());
+            }
+            if (Behavior.Task.Equals("PassFail"))
+            {
+                await Navigation.PushAsync(new PassFailTaskView());
+            }
+
+            //await Navigation.PushAsync(new BehaviorView());
 
             OnPropertyChanged();
         }

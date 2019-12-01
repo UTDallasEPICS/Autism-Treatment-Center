@@ -1260,11 +1260,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "projectUniqueName": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj",
       "projectName": "ATS.iOS",
-      "projectPath": "C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "projectPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj",
       "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS.iOS\\obj\\",
+      "outputPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
