@@ -9,7 +9,7 @@ namespace ATS.Views
     {
         public PassFailTaskCreatorView()
         {
-          //  InitializeComponent();
+            InitializeComponent();
         }
     }
 }

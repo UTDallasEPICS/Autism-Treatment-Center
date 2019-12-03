@@ -7,7 +7,7 @@
 
     <!-- Sets binding context for view to respective view model -->
     <ContentPage.BindingContext>
-        <ViewModels:PassFailViewModel/>
+        <ViewModels:PassFailTaskViewModel/>
     </ContentPage.BindingContext>
 
     <ContentPage.Content>

@@ -8,18 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ATS.iOS.Views.DurationTaskCreatorView.xaml", "Views/DurationTaskCreatorView.xaml", typeof(global::ATS.Views.DurationTaskView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ATS.iOS.Views.DurationTaskCreatorView.xaml", "Views/DurationTaskCreatorView.xaml", typeof(global::ATS.Views.DurationTaskCreatorView))]
 
 namespace ATS.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATC\\Autism-Treatment-Center\\ATS\\ATS\\Views\\DurationTaskCreatorView.xam" +
-        "l")]
-    public partial class DurationTaskView : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS\\Views\\DurationTaskCreator" +
+        "View.xaml")]
+    public partial class DurationTaskCreatorView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DurationTaskView));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DurationTaskCreatorView));
         }
     }
 }

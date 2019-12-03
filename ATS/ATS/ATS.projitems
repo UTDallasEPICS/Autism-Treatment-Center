@@ -33,6 +33,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\PassFailTaskCreatorView.xaml.cs">
       <DependentUpon>PassFailTaskCreatorView.xaml</DependentUpon>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\TeacherView.xaml.cs">
       <DependentUpon>TeacherView.xaml</DependentUpon>
@@ -57,13 +58,14 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\PassFailTaskView.xaml.cs">
       <DependentUpon>PassFailTaskView.xaml</DependentUpon>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\FrequencyTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\DurationTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\PassFailTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DurationTaskViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FrequencyTaskViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailTaskViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DurationTaskCreatorViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FrequencyTaskCreatorViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailTaskCreatorViewModel.cs" />
@@ -111,17 +113,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)Views\DurationTaskCreatorView.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\DurationTaskCreatorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskCreatorView.xaml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\FrequencyTaskCreatorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Views\PassFailTaskCreatorView.xaml">
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassFailTaskCreatorView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

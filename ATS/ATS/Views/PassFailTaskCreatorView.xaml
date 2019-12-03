@@ -6,8 +6,8 @@
              x:Class="ATS.Views.PassFailTaskCreatorView">
 
     <ContentPage.BindingContext>
-        <ViewModels:PassFailViewModel/>
-        <!-- THIS SHOULD BE FrequencyTaskCreatorViewModel but there is an error-->
+        <ViewModels:PassFailTaskViewModel/>
+        <!-- THIS SHOULD BE PassFailTaskCreatorViewModel but there is an error-->
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
