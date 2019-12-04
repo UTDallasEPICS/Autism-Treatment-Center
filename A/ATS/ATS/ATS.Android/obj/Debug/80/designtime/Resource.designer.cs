@@ -2992,10 +2992,13 @@ namespace ATS.Droid
 			public const int notify_panel_notification_icon_bg = 2131165486;
 			
 			// aapt resource value: 0x7F07012F
-			public const int tooltip_frame_dark = 2131165487;
+			public const int TeamLogo = 2131165487;
 			
 			// aapt resource value: 0x7F070130
-			public const int tooltip_frame_light = 2131165488;
+			public const int tooltip_frame_dark = 2131165488;
+			
+			// aapt resource value: 0x7F070131
+			public const int tooltip_frame_light = 2131165489;
 			
 			static Drawable()
 			{

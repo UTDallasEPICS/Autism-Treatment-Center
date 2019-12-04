@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using ATS.Database;
 using ATS.Models;
 using ATSApp.CustomUI;
-using ATS.Database.DBQueryUser;
 
 
 namespace ATS

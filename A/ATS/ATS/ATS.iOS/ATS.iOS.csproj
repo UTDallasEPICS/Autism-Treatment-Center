@@ -139,6 +139,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\ATSLogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TeamLogo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\ATS\ATS.projitems" Label="Shared" />
 </Project>
