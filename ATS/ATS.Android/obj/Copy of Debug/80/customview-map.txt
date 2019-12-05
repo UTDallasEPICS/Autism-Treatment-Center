@@ -1,0 +1,9 @@
+android.support.design.widget.TabLayout;obj\Debug\80\res\layout\tabbar.xml
+android.support.v7.widget.Toolbar;obj\Debug\80\res\layout\toolbar.xml
+item;obj\Debug\80\res\values\styles.xml
+resources;C:\Projects\ATC\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\lp\2\jl\res\values\strings.xml
+resources;C:\Projects\ATC\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\lp\3\jl\res\values\strings.xml
+resources;obj\Debug\80\res\values\styles.xml
+string;C:\Projects\ATC\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\lp\2\jl\res\values\strings.xml
+string;C:\Projects\ATC\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\lp\3\jl\res\values\strings.xml
+style;obj\Debug\80\res\values\styles.xml

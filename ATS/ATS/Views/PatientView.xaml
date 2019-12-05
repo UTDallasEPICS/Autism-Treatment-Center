@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ATS.Views"
+             xmlns:ViewModels="clr-namespace:ATS.ViewModels"
+             x:Class="ATS.Views.PatientView">
+    
+    <!-- Sets binding context for view to respective view model -->
+    <ContentPage.BindingContext>
+        <ViewModels:PatientViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        
+        <StackLayout Margin="20">
+        <!-- Creates a title with font 24 -->
+            <Label Text="Behavior" 
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            
+            <!-- Button to give the option to add a new Behavior -->
+            <Button Text ="Add Behavior" Clicked="AddBehaviorClickedAsync"/>
+            
+            <ActivityIndicator IsRunning="{Binding IsBusy}"
+                               IsVisible="{Binding IsBusy}"
+                               HeightRequest="40"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"/>
+            
+            <!-- List View to hold our List of Behavior objects -->
+            <ListView x:Name="BehaviorListView" 
+                      Margin="0,20,0,0" 
+                      ItemsSource="{Binding Behavior, Mode=TwoWay}"
+                      ItemTapped="BehaviorTappedAsync">
+                
+                <!-- List view to hold a list of BehaviorModel objects with information -->
+                <ListView.ItemTemplate>
+                    <!-- This is a template for the data in the List View ItemsSource ObervableList -->
+                    <DataTemplate>
+                        <!-- Information on the text displayed for every ObersvableList object -->
+                        <TextCell Text=" {Binding Name} " TextColor="Black"/>
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+            </ListView>
+            <!-- Footer 
+            <StackLayout Orientation="Horizontal">
+                Button to give the option to add a new Behavior 
+                <Button Text ="Aggression" HorizontalOptions="Start"/>
+                Button to give the option to add a new Behavior
+                <Button Text ="Verbal" HorizontalOptions="CenterAndExpand"/>
+                 Button to give the option to add a new Behavior
+                <Button Text ="Flope" HorizontalOptions="End"/> 
+            </StackLayout>-->
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

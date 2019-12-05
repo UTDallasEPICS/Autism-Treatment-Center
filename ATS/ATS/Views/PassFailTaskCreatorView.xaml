@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ATS.Views"
+             xmlns:ViewModels="clr-namespace:ATS.ViewModels"
+             x:Class="ATS.Views.PassFailTaskCreatorView">
+
+    <ContentPage.BindingContext>
+        <ViewModels:PassFailTaskViewModel/>
+        <!-- THIS SHOULD BE PassFailTaskCreatorViewModel but there is an error-->
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+
+        <StackLayout Margin="20, 20, 20, 0">
+
+            <!-- Creates a title with font 24 -->
+            <Label Text="PassFail Creator" 
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand" />
+
+            <!-- Horizontal stack layout for each entry, so place it in this format:
+                    <Label> <Entry input location> -->
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start" HeightRequest="30">Opportunities</Label>
+                <Entry Text="{Binding Opportunities, Mode=TwoWay}"
+                       WidthRequest="200" 
+                       HorizontalOptions="EndAndExpand"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="Start" HeightRequest="30">Successes</Label>
+                <Entry Text="{Binding Successes, Mode=TwoWay}"
+                       WidthRequest="200" 
+                       HorizontalOptions="EndAndExpand"></Entry>
+            </StackLayout>
+
+            <!-- Button for when the user is done entering patient information -->
+            <Button Command="{Binding SavePassFailCommand}" Text="Save" 
+                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Button>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
