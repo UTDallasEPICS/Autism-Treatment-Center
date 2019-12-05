@@ -2757,6 +2757,9 @@ namespace ATS.Droid
 			// aapt resource value: 0x7F070114
 			public const int notify_panel_notification_icon_bg = 2131165460;
 			
+			// aapt resource value: 0x7F070115
+			public const int TeamLogo = 2131165461;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

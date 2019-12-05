@@ -1,9 +1,11 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Configuration" />
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Custom UI\CustomEntry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseCommunication.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Database\DatabaseInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Login.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\TaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BehaviorPassFailTaskModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BehaviorFrequencyTaskModel.cs" />

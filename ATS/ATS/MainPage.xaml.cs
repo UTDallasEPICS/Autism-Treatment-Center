@@ -22,9 +22,12 @@ namespace ATS
             
             BtnLogin.Clicked += async (source, args) =>
             {
-                await BtnLoginClickListener();
+                //await BtnLoginClickListener();
+                Navigation.PushAsync(new TeacherView());
             };
+
             
+
         }
 
         private async Task BtnLoginClickListener()
