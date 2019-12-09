@@ -436,3 +436,4 @@ C:\Projects\ATCSandbox6\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\sta
 C:\Projects\ATCSandbox6\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\stamp\_GenerateJavaStubs.stamp
 C:\Projects\ATCSandbox6\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\stamp\_GeneratePackageManagerJava.stamp
 C:\Projects\ATCSandbox6\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\stamp\_ResolveLibraryProjectImports.stamp
+C:\Projects\ATCSandbox6\Autism-Treatment-Center\ATS\ATS.Android\obj\Debug\80\ATS.Android.csprojAssemblyReference.cache

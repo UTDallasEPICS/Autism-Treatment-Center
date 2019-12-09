@@ -6,7 +6,7 @@
              x:Class="ATS.Views.DurationTaskCreatorView">
 
     <ContentPage.BindingContext>
-        <ViewModels:DurationTaskViewModel/> <!-- THIS SHOULD BE DurationTaskCreatorViewModel but there is an error-->
+        <ViewModels:DurationTaskCreatorViewModel/>
     </ContentPage.BindingContext>
 
     <ContentPage.Content>
@@ -22,7 +22,7 @@
                     <Label> <Entry input location> -->
             <StackLayout Orientation="Horizontal">
                 <Label HorizontalOptions="Start" HeightRequest="30">Time</Label>
-                <Entry Text="{Binding Name, Mode=TwoWay}"
+                <Entry Text="{Binding Time, Mode=TwoWay}"
                        WidthRequest="200" 
                        HorizontalOptions="EndAndExpand"></Entry>
             </StackLayout>
