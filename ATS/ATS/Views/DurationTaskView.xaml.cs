@@ -24,6 +24,8 @@ namespace ATS.Views
 
         async void OccurenceTappedAsync(object sender, ItemTappedEventArgs args)
         {
+
+
             OnPropertyChanged();
         }
     }
