@@ -69,6 +69,30 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DurationTaskCreatorViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\FrequencyTaskCreatorViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PassFailTaskCreatorViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\UserSelection.xaml.cs">
+      <DependentUpon>UserSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\UserSelectionViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\UserData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database\OptionData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OptionModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VADMPage.xaml.cs">
+      <DependentUpon>VADMPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\VADMPageTeacher.xaml.cs">
+      <DependentUpon>VADMPageTeacher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ViewButtonTeacher.xaml.cs">
+      <DependentUpon>ViewButtonTeacher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\AddButtonTeacher.xaml.cs">
+      <DependentUpon>AddButtonTeacher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AddButtonTeacherViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TeacherViewButtonViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\VADMPageTeacherViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\VADMViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Database\" />
@@ -108,6 +132,26 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassFailTaskView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\UserSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\VADMPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\VADMPageTeacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ViewButtonTeacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AddButtonTeacher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

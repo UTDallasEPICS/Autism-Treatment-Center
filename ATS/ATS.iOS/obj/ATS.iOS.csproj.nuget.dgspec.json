@@ -1,32 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj": {}
+    "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj": {
+    "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+        "projectUniqueName": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj",
         "projectName": "ATS.iOS",
-        "projectPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\ATS.iOS.csproj",
-        "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.iOS\\obj\\",
+        "projectPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj",
+        "packagesPath": "/Users/manshaf/.nuget/packages/",
+        "outputPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/manshaf/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

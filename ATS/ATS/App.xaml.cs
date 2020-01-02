@@ -9,32 +9,33 @@ using Amazon.CognitoIdentity;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
 using Xamarin.Forms;
+using ATS.Database;
 using Amazon;
 
 namespace ATS
 {
-	public partial class App : Application
+    public partial class App : Application
     {
-		public App ()
-		{
-			InitializeComponent();
-
-            MainPage = new NavigationPage (new ATS.MainPage());
-		}
-
-		protected override void OnStart ()
+        public App()
         {
-            //Spring2018 Team:  Handle when your app starts
+            InitializeComponent();
+
+            MainPage = new NavigationPage(new ATS.MainPage());
         }
 
-        protected override void OnSleep ()
-		{
-            //Spring2018 Team:  Handle when your app sleeps
+        protected override void OnStart()
+        {
+            //Spring2020 Team:  Handle when your app starts
         }
 
-        protected override void OnResume ()
-		{
-            //Spring2018 Team:  Handle when your app resumes
+        protected override void OnSleep()
+        {
+            //Spring2020 Team:  Handle when your app sleeps
+        }
+
+        protected override void OnResume()
+        {
+            //Spring2020 Team:  Handle when your app resumes
         }
     }
 }

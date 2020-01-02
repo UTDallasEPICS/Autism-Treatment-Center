@@ -1063,32 +1063,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Leo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/manshaf/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.Android\\ATS.Android.csproj",
+      "projectUniqueName": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/ATS.Android.csproj",
       "projectName": "ATS.Android",
-      "projectPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.Android\\ATS.Android.csproj",
-      "packagesPath": "C:\\Users\\Leo\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\ATCSandbox6\\Autism-Treatment-Center\\ATS\\ATS.Android\\obj\\",
+      "projectPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/ATS.Android.csproj",
+      "packagesPath": "/Users/manshaf/.nuget/packages/",
+      "outputPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Leo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/manshaf/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid80"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

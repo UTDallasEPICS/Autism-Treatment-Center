@@ -20,7 +20,7 @@ namespace ATS
         {
             //  Need to collect user login information her
 
-            Navigation.PushAsync(new TeacherView()); //PatientView
+            Navigation.PushAsync(new UserSelection()); //PatientView
         }
     }
 }

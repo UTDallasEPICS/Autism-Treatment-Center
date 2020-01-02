@@ -1,18 +1,21 @@
-/********************************************************************************************************************
-* The TeacherView page displays the Patients. The name of this file can be changed to PatientView from TeacherView
-********************************************************************************************************************/
+﻿/******************************************************************
+* The ViewButtonTeacher page displays the therapists by retrieving
+* their information from the database
+*
+*********************************************************************/
+
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ATS.Views"
              xmlns:ViewModels="clr-namespace:ATS.ViewModels"
-             x:Class="ATS.Views.TeacherView">
+             x:Class="ATS.Views.ViewButtonTeacher">
     
     <!-- Sets binding context for view to respective view model -->
     <!-- For futute team, you could create a viewmodel locator to do this automatically
             if you really wanted to -->
     <ContentPage.BindingContext>
-        <ViewModels:TeacherViewModel/>
+        <ViewModels:TeacherViewButtonViewModel/>
     </ContentPage.BindingContext>
         
     <!-- Page Content -->
@@ -20,11 +23,9 @@
         <StackLayout Margin="20">
             
             <!-- Creates a title with font 24 -->
-            <Label Text="Your Patients" 
+            <Label Text="Therapists"  FontSize="34"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <!-- Button to give the option to add a new patient -->
-            <Button Text="Add Patient" Clicked="AddPatientClickedAsync"/>
             
             <!-- Activity indicator, showing loading animation when IsBusy is true -->
             <ActivityIndicator IsRunning="{Binding IsBusy}"
@@ -34,10 +35,26 @@
                                HorizontalOptions="CenterAndExpand"/>
             
             <!-- List View to hold our List of patient objects -->
-            <ListView x:Name="PatientsListView" 
+            <ListView x:Name="TherapistsListView1" 
                       Margin="0,20,0,0" 
-                      ItemsSource="{Binding Patients, Mode=TwoWay}"
-                      ItemTapped="PatientTappedAsync">
+                      ItemsSource="{Binding _teacher1, Mode=TwoWay}">
+                      
+                
+                <!-- List view to hold a list of patientModel objects with information -->
+                <ListView.ItemTemplate>
+                    <!-- This is a template for the data in the List View ItemsSource ObervableList -->
+                    <DataTemplate>
+                        <!-- Information on the text displayed for every ObersvableList object -->
+                        <TextCell Text=" {Binding Name} " TextColor="Black"
+                                  Detail=" {Binding Age} " DetailColor=" Black" />
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ListView x:Name="TherapistsListView2" 
+                      Margin="0,20,0,0" 
+                      ItemsSource="{Binding _teacher2, Mode=TwoWay}">
                 
                 <!-- List view to hold a list of patientModel objects with information -->
                 <ListView.ItemTemplate>

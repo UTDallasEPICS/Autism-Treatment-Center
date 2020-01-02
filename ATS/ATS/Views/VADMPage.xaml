@@ -1,0 +1,60 @@
+﻿/******************************************************************
+* The VADMPage stands for "View, Add, Modify and Delete page" that
+* appears after either Therapists or Patients option is chosen.
+*
+* This particular page is for the Patients option
+*********************************************************************/
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ATS.Views.VADMPage">
+    <ListView ItemsSource="{Binding Options}"
+              HasUnevenRows="True"
+              BackgroundColor="#ecf0f1"
+              SeparatorVisibility="None"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+
+        <ListView.ItemTemplate>
+
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="6,4,6,4"
+                                 BackgroundColor="White">
+                        <Label Text="{Binding Option1}"
+                               Margin="20"
+                               FontAttributes="Bold"
+                               FontSize="40"
+                               BackgroundColor= "White">
+
+                               <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Label.GestureRecognizers>
+
+                          </Label>
+
+                        <Label Text="{Binding Option2}"
+                               Margin="20"
+                               FontAttributes="Bold"
+                               FontSize="40"
+                               BackgroundColor= "White" />
+                        <Label Text="{Binding Option3}"
+                               Margin="20"
+                               FontAttributes="Bold"
+                               FontSize="40"
+                               BackgroundColor= "White" />
+                        <Label Text="{Binding Option4}"
+                               Margin="20"
+                               FontAttributes="Bold"
+                               FontSize="40"
+                               BackgroundColor= "White" />
+
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

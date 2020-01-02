@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace ATS.Database
 {
     //  This will be our object to comminicate with the database
-       
+
     public class DatabaseCommunication
     {
         //  Variable holding the configuration of our dynamo function
@@ -42,6 +42,11 @@ namespace ATS.Database
             Console.WriteLine("Generic model Saved.");
         }
 
+        internal Task saveGenericModelUpdateRelation<T1, T2, T3>(TeacherModel therapist_To_Add, string teacher_id)
+        {
+            throw new NotImplementedException();
+        }
+
         //  Async Task which will save the generic model to our database, also with the respective
         //  relational table updated aswell
         //
@@ -73,7 +78,7 @@ namespace ATS.Database
         //  relation_table_id = id of parent, so we can save the patient id to the list of ids belonging to teacher
         public async Task saveGenericModelUpdateRelation<TModel, TRelation_Table, TNext_Relation_Table>(TModel Model, string relation_table_id)
             where TRelation_Table : IRelationInterface
-            where TNext_Relation_Table: IRelationInterface, new()
+            where TNext_Relation_Table : IRelationInterface, new()
             where TModel : IDataModelInterface
         {
             TRelation_Table Relation_Table = await getGenericModel<TRelation_Table>(relation_table_id);
@@ -119,9 +124,6 @@ namespace ATS.Database
 
         /*********************  Functions to GET data from the database  **********************************/
 
-
-
-
         //  This function will take a genericId and return the model with that ID
         public async Task<TModel> getGenericModel<TModel>(string modelId)
         {
@@ -136,12 +138,71 @@ namespace ATS.Database
             return searchResponse[0];
         }
 
+        public async Task<TModel> getGenericIds<TModel>()
+        {
+            Console.WriteLine("Getting generic model...");
+
+            var conditions = new List<ScanCondition>();
+
+            var searchResponse = await DatabaseInit.DynamoContext.ScanAsync<TModel>(conditions).GetRemainingAsync();
+
+            Console.WriteLine("Found generic model.");
+
+            return searchResponse[0];
+        }
+
+
+        //  This function will take a genericId and return the model with that ID
+        /*public async Task<TModel> getGenericModel<TModel>(string modelId)
+        {
+            Console.WriteLine("Getting generic model...");
+
+            var searchResponse = await DatabaseInit.DynamoContext.QueryAsync<TModel>(modelId, Config).GetRemainingAsync();
+
+            Console.WriteLine("Found generic model.");
+
+            return searchResponse[0];
+        }*/
+
+        /*public async Task<TModel> getGenericModel<TModel>(string modelId)
+        {
+
+            Console.WriteLine("Getting generic model...");
+
+            List<TModel> searchResponse = null;
+            try
+            {
+                var search = DatabaseInit.DynamoContext.QueryAsync<TModel>(modelId, Config);
+
+
+                searchResponse = await search.GetRemainingAsync();
+
+
+                Console.WriteLine("Found generic model.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: \n" + ex.StackTrace);
+            }
+            return searchResponse[0];
+
+            Console.WriteLine("Getting generic model...");
+
+            var search = DatabaseInit.DynamoContext.QueryAsync<TModel>(modelId, Config);
+
+            var searchResponse = await search.GetRemainingAsync();
+
+            Console.WriteLine("Found generic model.");
+
+            return searchResponse[0];
+        }*/
+
 
 
 
         /*********************  Functions to GET RELATIONAL data from the database  **********************************/
 
-        
+
 
 
         //  This function will use a generic relation table and take a relation id for that table,
@@ -153,7 +214,7 @@ namespace ATS.Database
         //      relationId = teacherId
         //      
         //      return = ids of patients belonging to teacher
-        public async Task<List<string>> getGenericRelationIds<TRelation_Table>(string relationId) 
+        public async Task<List<string>> getGenericRelationIds<TRelation_Table>(string relationId)
             where TRelation_Table : IRelationInterface
         {
             Console.WriteLine("Getting ids belonging to the generic with genericId...");
@@ -204,7 +265,7 @@ namespace ATS.Database
             int target_count = targetIds.Count;
 
             //  For loop that gets every tar get that was found beloning to our relation id
-            for(int target_index = 0; target_index < target_count; target_index++)
+            for (int target_index = 0; target_index < target_count; target_index++)
             {
                 if (targetIds[target_index] != "Null")
                 {
