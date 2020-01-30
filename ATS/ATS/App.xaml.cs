@@ -23,6 +23,11 @@ namespace ATS
             MainPage = new NavigationPage(new ATS.MainPage());
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void OnStart()
         {
             //Spring2020 Team:  Handle when your app starts

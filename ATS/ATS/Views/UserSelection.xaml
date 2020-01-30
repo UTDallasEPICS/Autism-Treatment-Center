@@ -2,8 +2,46 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="ATS.Views.MyPage">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+    x:Class="ATS.Views.UserSelection">
+    <ListView ItemsSource="{Binding Users}"
+              HasUnevenRows="True"
+              BackgroundColor="#ecf0f1"
+              SeparatorVisibility="None"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="FillAndExpand">
+
+        <ListView.ItemTemplate>
+
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Margin="6,4,6,4"
+                                 BackgroundColor="White">
+                        <Label Text="{Binding Name1}"
+                               Margin="20"
+                               FontAttributes="Bold"
+                               FontSize="40" >
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                            </Label.GestureRecognizers>
+
+                        </Label>
+
+                        <Label Text="{Binding Name2}"
+                               Margin="20"
+                               FontAttributes="Bold"
+                               FontSize="40" >
+
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                            </Label.GestureRecognizers>
+
+                        </Label>
+
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>
