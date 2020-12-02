@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ATS.Views.StudentPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.25*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   BackgroundColor="#0F5787"
+                   Text="Student"
+                   TextColor="White"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="25"/>
+
+                <Entry Grid.Row="1"
+                   Grid.ColumnSpan="2"
+                   Placeholder="Student Search..."
+                   Margin="18">
+            </Entry>
+            <Button Clicked="StudentSearchClickedAsync" Text="Search"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Margin="15,25"/>
+            <Image  Source="StudentPagePicture.png"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Margin="0,20,0,0">
+            </Image>
+            <Button Clicked="StudentNewClickedAsync" Text="Add New"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Margin="15,25"/>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

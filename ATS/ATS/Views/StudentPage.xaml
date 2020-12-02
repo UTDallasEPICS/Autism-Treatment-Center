@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.StudentPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.25*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <!--Header-->
+                <Label Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   BackgroundColor="#0F5787"
+                   Text="Student"
+                   TextColor="White"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="25"/>
+                <!--menu button-->
+                <Button Clicked="MenuClickedAsync" ImageSource="MenuLines.png"
+                        Scale=".35"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+                <!--student search bar-->
+                <Entry Grid.Row="1"
+                   Grid.ColumnSpan="2"
+                   Placeholder="Student Search..."
+                   Margin="18">
+                </Entry>
+                <!--search button-->
+                <Button Clicked="StudentSearchClickedAsync" Text="Search"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Margin="15,25"/>
+                <!--This code needs to be changed with a collection or something to display student data retrieved from the backend, currently it is just a static image to demonstrate how it should look-->
+                <Image  Source="StudentPagePicture.png"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Margin="0,20,0,0">
+                </Image>
+                <!--add new student button-->
+                <Button Clicked="StudentNewClickedAsync" Text="Add New"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Margin="15,25"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

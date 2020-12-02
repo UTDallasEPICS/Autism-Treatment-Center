@@ -2,100 +2,111 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
-      "AWSSDK.CognitoIdentity/3.3.2.74": {
+      "AWSSDK.CognitoIdentity/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
-          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)",
+          "AWSSDK.SecurityToken": "[3.5.0.18, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.31.12": {
+      "AWSSDK.Core/3.5.1.16": {
         "type": "package",
         "dependencies": {
-          "PCLCrypto": "1.0.2.15130",
-          "PCLStorage": "1.0.2"
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.3.17.10": {
+      "AWSSDK.DynamoDBv2/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         }
       },
-      "AWSSDK.SecurityToken/3.3.4.55": {
+      "AWSSDK.SecurityToken/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         }
       },
-      "PCLCrypto/1.0.2.15130": {
+      "CommonServiceLocator/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "dependencies": {
-          "Validation": "[2.0.6, 3.0.0)"
+          "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "PCLStorage/1.0.2": {
+      "MvvmLightLibs/5.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.2"
+        },
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "ref/xamarinios10/_._": {}
         },
         "runtime": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "lib/xamarinios10/_._": {}
         }
       },
-      "Validation/2.0.6.15003": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        }
-      },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "runtime": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "resource": {
@@ -203,106 +214,117 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
         }
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
-      "AWSSDK.CognitoIdentity/3.3.2.74": {
+      "AWSSDK.CognitoIdentity/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
-          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)",
+          "AWSSDK.SecurityToken": "[3.5.0.18, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.31.12": {
+      "AWSSDK.Core/3.5.1.16": {
         "type": "package",
         "dependencies": {
-          "PCLCrypto": "1.0.2.15130",
-          "PCLStorage": "1.0.2"
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.3.17.10": {
+      "AWSSDK.DynamoDBv2/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         }
       },
-      "AWSSDK.SecurityToken/3.3.4.55": {
+      "AWSSDK.SecurityToken/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         }
       },
-      "PCLCrypto/1.0.2.15130": {
+      "CommonServiceLocator/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "dependencies": {
-          "Validation": "[2.0.6, 3.0.0)"
+          "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "PCLStorage/1.0.2": {
+      "MvvmLightLibs/5.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.2"
+        },
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "ref/xamarinios10/_._": {}
         },
         "runtime": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "lib/xamarinios10/_._": {}
         }
       },
-      "Validation/2.0.6.15003": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        }
-      },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "runtime": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "resource": {
@@ -410,106 +432,117 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
         }
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
-      "AWSSDK.CognitoIdentity/3.3.2.74": {
+      "AWSSDK.CognitoIdentity/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
-          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)",
+          "AWSSDK.SecurityToken": "[3.5.0.18, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.31.12": {
+      "AWSSDK.Core/3.5.1.16": {
         "type": "package",
         "dependencies": {
-          "PCLCrypto": "1.0.2.15130",
-          "PCLStorage": "1.0.2"
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.3.17.10": {
+      "AWSSDK.DynamoDBv2/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         }
       },
-      "AWSSDK.SecurityToken/3.3.4.55": {
+      "AWSSDK.SecurityToken/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         }
       },
-      "PCLCrypto/1.0.2.15130": {
+      "CommonServiceLocator/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "dependencies": {
-          "Validation": "[2.0.6, 3.0.0)"
+          "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "PCLStorage/1.0.2": {
+      "MvvmLightLibs/5.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.2"
+        },
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "ref/xamarinios10/_._": {}
         },
         "runtime": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "lib/xamarinios10/_._": {}
         }
       },
-      "Validation/2.0.6.15003": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        }
-      },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "runtime": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "resource": {
@@ -617,106 +650,117 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
         }
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
-      "AWSSDK.CognitoIdentity/3.3.2.74": {
+      "AWSSDK.CognitoIdentity/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)",
-          "AWSSDK.SecurityToken": "[3.3.4.55, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)",
+          "AWSSDK.SecurityToken": "[3.5.0.18, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll": {}
+          "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll": {}
         }
       },
-      "AWSSDK.Core/3.3.31.12": {
+      "AWSSDK.Core/3.5.1.16": {
         "type": "package",
         "dependencies": {
-          "PCLCrypto": "1.0.2.15130",
-          "PCLStorage": "1.0.2"
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.Core.dll": {}
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.DynamoDBv2/3.3.17.10": {
+      "AWSSDK.DynamoDBv2/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll": {}
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
         }
       },
-      "AWSSDK.SecurityToken/3.3.4.55": {
+      "AWSSDK.SecurityToken/3.5.0.18": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.31.12, 3.4.0)"
+          "AWSSDK.Core": "[3.5.1.16, 3.6.0)"
         },
         "compile": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll": {}
+          "lib/netstandard2.0/AWSSDK.SecurityToken.dll": {}
         }
       },
-      "PCLCrypto/1.0.2.15130": {
+      "CommonServiceLocator/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "type": "package",
         "dependencies": {
-          "Validation": "[2.0.6, 3.0.0)"
+          "System.Threading.Tasks.Extensions": "4.5.2"
         },
         "compile": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/Xamarin.iOS/PCLCrypto.dll": {}
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "PCLStorage/1.0.2": {
+      "MvvmLightLibs/5.4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.2"
+        },
+        "compile": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        },
+        "runtime": {
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll": {},
+          "lib/xamarin.ios10/GalaSoft.MvvmLight.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "ref/xamarinios10/_._": {}
         },
         "runtime": {
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll": {},
-          "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll": {}
+          "lib/xamarinios10/_._": {}
         }
       },
-      "Validation/2.0.6.15003": {
-        "type": "package",
-        "compile": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        },
-        "runtime": {
-          "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll": {}
-        }
-      },
-      "Xamarin.Forms/3.6.0.344457": {
+      "Xamarin.Forms/4.8.0.1451": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "runtime": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
-          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
           "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
         },
         "resource": {
@@ -824,269 +868,339 @@
           }
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
         }
       }
     }
   },
   "libraries": {
-    "AWSSDK.CognitoIdentity/3.3.2.74": {
-      "sha512": "ix71BvCCK0VU1EHu/dCcs0LXsXj/G9afAKMhIxeTSdcdkHgU/9IqWweTIVQ41uHW+6zZMrQ1x/dW9VEeSdioSA==",
+    "AWSSDK.CognitoIdentity/3.5.0.18": {
+      "sha512": "3aP1uOs+wy0KN+jaaOFyJ2+UQ/bzu00HAcGtjCyDdvV9iZSm6JWFEAIwqZlaA7IuhGVx0lzhBsD1pdt2LnlUdw==",
       "type": "package",
-      "path": "awssdk.cognitoidentity/3.3.2.74",
+      "path": "awssdk.cognitoidentity/3.5.0.18",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.CognitoIdentity.CodeAnalysis.dll",
-        "awssdk.cognitoidentity.3.3.2.74.nupkg.sha512",
+        "awssdk.cognitoidentity.3.5.0.18.nupkg.sha512",
         "awssdk.cognitoidentity.nuspec",
-        "lib/MonoAndroid10/AWSSDK.CognitoIdentity.XML",
-        "lib/MonoAndroid10/AWSSDK.CognitoIdentity.dll",
-        "lib/MonoTouch10/AWSSDK.CognitoIdentity.XML",
-        "lib/MonoTouch10/AWSSDK.CognitoIdentity.dll",
-        "lib/MonoTouch10/AWSSDK.CognitoIdentity.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.XML",
-        "lib/Xamarin.iOS10/AWSSDK.CognitoIdentity.dll",
         "lib/net35/AWSSDK.CognitoIdentity.dll",
         "lib/net35/AWSSDK.CognitoIdentity.pdb",
         "lib/net35/AWSSDK.CognitoIdentity.xml",
         "lib/net45/AWSSDK.CognitoIdentity.dll",
         "lib/net45/AWSSDK.CognitoIdentity.pdb",
         "lib/net45/AWSSDK.CognitoIdentity.xml",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.dll",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.pdb",
+        "lib/netcoreapp3.1/AWSSDK.CognitoIdentity.xml",
         "lib/netstandard1.3/AWSSDK.CognitoIdentity.dll",
         "lib/netstandard1.3/AWSSDK.CognitoIdentity.pdb",
         "lib/netstandard1.3/AWSSDK.CognitoIdentity.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentity.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentity.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.CognitoIdentity.pdb",
-        "lib/uap/AWSSDK.CognitoIdentity.XML",
-        "lib/uap/AWSSDK.CognitoIdentity.dll",
-        "lib/uap/AWSSDK.CognitoIdentity.pdb",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentity.dll",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentity.pdb",
+        "lib/netstandard2.0/AWSSDK.CognitoIdentity.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.Core/3.3.31.12": {
-      "sha512": "+siZzfUs8kymMc+17fhzbu7hATItk9+1S0E5R8KShXj/zK4rgJKoabe5cdo8JQlhHqvgW2P5sEl+DWTrdLhgJw==",
+    "AWSSDK.Core/3.5.1.16": {
+      "sha512": "5MHGHRLssZz+2cQ9bkhkTXp8W/UHMmz/vaNmkuGcPvyIkqCUFlOpXV89qAXVti6/Q57Wc7BEaVvFP5lclZgsBw==",
       "type": "package",
-      "path": "awssdk.core/3.3.31.12",
+      "path": "awssdk.core/3.5.1.16",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "awssdk.core.3.3.31.12.nupkg.sha512",
+        "awssdk.core.3.5.1.16.nupkg.sha512",
         "awssdk.core.nuspec",
-        "lib/MonoAndroid10/AWSSDK.Core.XML",
-        "lib/MonoAndroid10/AWSSDK.Core.dll",
-        "lib/MonoAndroid10/AWSSDK.Core.pdb",
-        "lib/MonoTouch10/AWSSDK.Core.XML",
-        "lib/MonoTouch10/AWSSDK.Core.dll",
-        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
-        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
-        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
-        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.pdb",
         "lib/net35/AWSSDK.Core.xml",
         "lib/net45/AWSSDK.Core.dll",
         "lib/net45/AWSSDK.Core.pdb",
         "lib/net45/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
         "lib/netstandard1.3/AWSSDK.Core.dll",
         "lib/netstandard1.3/AWSSDK.Core.pdb",
         "lib/netstandard1.3/AWSSDK.Core.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
-        "lib/uap/AWSSDK.Core.XML",
-        "lib/uap/AWSSDK.Core.dll",
-        "lib/uap/AWSSDK.Core.pdb",
-        "lib/win8/AWSSDK.Core.XML",
-        "lib/win8/AWSSDK.Core.dll",
-        "lib/win8/AWSSDK.Core.pdb",
-        "lib/wp8/AWSSDK.Core.XML",
-        "lib/wp8/AWSSDK.Core.dll",
-        "lib/wp8/AWSSDK.Core.pdb",
-        "lib/wpa81/AWSSDK.Core.XML",
-        "lib/wpa81/AWSSDK.Core.dll",
-        "lib/wpa81/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.DynamoDBv2/3.3.17.10": {
-      "sha512": "nT4LNB6IsI8Q+FWdLLeA/pimbCsBcyv/OtJ9ttO+beOH3Ge+/VtrLYeBzlX33YNfG4wuP3ZpvKJX5AQQ6jcs1A==",
+    "AWSSDK.DynamoDBv2/3.5.0.18": {
+      "sha512": "FToxRGw8fUiUvTumR0QZAAUIyW07qSajRM1mwCPdBToVBv/UZjs7H4nWaJL5xLQ5qXFiI2vckyu33MtNo+glWA==",
       "type": "package",
-      "path": "awssdk.dynamodbv2/3.3.17.10",
+      "path": "awssdk.dynamodbv2/3.5.0.18",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
-        "awssdk.dynamodbv2.3.3.17.10.nupkg.sha512",
+        "awssdk.dynamodbv2.3.5.0.18.nupkg.sha512",
         "awssdk.dynamodbv2.nuspec",
-        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.XML",
-        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.dll",
-        "lib/MonoTouch10/AWSSDK.DynamoDBv2.XML",
-        "lib/MonoTouch10/AWSSDK.DynamoDBv2.dll",
-        "lib/MonoTouch10/AWSSDK.DynamoDBv2.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.XML",
-        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll",
         "lib/net35/AWSSDK.DynamoDBv2.dll",
         "lib/net35/AWSSDK.DynamoDBv2.pdb",
         "lib/net35/AWSSDK.DynamoDBv2.xml",
         "lib/net45/AWSSDK.DynamoDBv2.dll",
         "lib/net45/AWSSDK.DynamoDBv2.pdb",
         "lib/net45/AWSSDK.DynamoDBv2.xml",
+        "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll",
+        "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.pdb",
+        "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.xml",
         "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll",
         "lib/netstandard1.3/AWSSDK.DynamoDBv2.pdb",
         "lib/netstandard1.3/AWSSDK.DynamoDBv2.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.pdb",
-        "lib/uap/AWSSDK.DynamoDBv2.XML",
-        "lib/uap/AWSSDK.DynamoDBv2.dll",
-        "lib/uap/AWSSDK.DynamoDBv2.pdb",
+        "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll",
+        "lib/netstandard2.0/AWSSDK.DynamoDBv2.pdb",
+        "lib/netstandard2.0/AWSSDK.DynamoDBv2.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "AWSSDK.SecurityToken/3.3.4.55": {
-      "sha512": "i0pGG6gPLEwtuRYvqeCrzKiLBo0s0Ru2AMO4ysXCIscdrwjJtCuSI5l5mUKpWIKMvhMC3bXReoeA/en3QUU4Rg==",
+    "AWSSDK.SecurityToken/3.5.0.18": {
+      "sha512": "coG9D7iXOPPIWvUdSOe9rbAe3qQGsOHAQ3/XijN2FvzisIVi70ohBivbRitL4ejYXAwZN3WZ7IH9ZrhJEtrKpw==",
       "type": "package",
-      "path": "awssdk.securitytoken/3.3.4.55",
+      "path": "awssdk.securitytoken/3.5.0.18",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/AWSSDK.SecurityToken.CodeAnalysis.dll",
-        "awssdk.securitytoken.3.3.4.55.nupkg.sha512",
+        "awssdk.securitytoken.3.5.0.18.nupkg.sha512",
         "awssdk.securitytoken.nuspec",
-        "lib/MonoAndroid10/AWSSDK.SecurityToken.XML",
-        "lib/MonoAndroid10/AWSSDK.SecurityToken.dll",
-        "lib/MonoTouch10/AWSSDK.SecurityToken.XML",
-        "lib/MonoTouch10/AWSSDK.SecurityToken.dll",
-        "lib/MonoTouch10/AWSSDK.SecurityToken.pdb",
-        "lib/Xamarin.iOS10/AWSSDK.SecurityToken.XML",
-        "lib/Xamarin.iOS10/AWSSDK.SecurityToken.dll",
         "lib/net35/AWSSDK.SecurityToken.dll",
         "lib/net35/AWSSDK.SecurityToken.pdb",
         "lib/net35/AWSSDK.SecurityToken.xml",
         "lib/net45/AWSSDK.SecurityToken.dll",
         "lib/net45/AWSSDK.SecurityToken.pdb",
         "lib/net45/AWSSDK.SecurityToken.xml",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SecurityToken.xml",
         "lib/netstandard1.3/AWSSDK.SecurityToken.dll",
         "lib/netstandard1.3/AWSSDK.SecurityToken.pdb",
         "lib/netstandard1.3/AWSSDK.SecurityToken.xml",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SecurityToken.XML",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SecurityToken.dll",
-        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.SecurityToken.pdb",
-        "lib/uap/AWSSDK.SecurityToken.XML",
-        "lib/uap/AWSSDK.SecurityToken.dll",
-        "lib/uap/AWSSDK.SecurityToken.pdb",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.dll",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.pdb",
+        "lib/netstandard2.0/AWSSDK.SecurityToken.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
     },
-    "PCLCrypto/1.0.2.15130": {
-      "sha512": "FbqU/mbtemApQTSLHTlLHmzR55oB9O8FJ6cEiQdJr2PMpzGM6k4yroHpJKBcl+bZ6SplTClK3SS6xxlskyLgHg==",
+    "CommonServiceLocator/2.0.2": {
+      "sha512": "OeAz2cDGiQuaxpJ2pUm1xyZyklT2HgP5LHoumI0o/pcXdTweJMjKHu92JKa33pZRCrRI0DdPcE5MGHk6GCpDMQ==",
       "type": "package",
-      "path": "pclcrypto/1.0.2.15130",
+      "path": "commonservicelocator/2.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/Xamarin.iOS/PCLCrypto.dll",
-        "lib/Xamarin.iOS/PCLCrypto.xml",
-        "lib/monoandroid/PCLCrypto.dll",
-        "lib/monoandroid/PCLCrypto.xml",
-        "lib/monotouch/PCLCrypto.dll",
-        "lib/monotouch/PCLCrypto.xml",
-        "lib/net40-Client/PCLCrypto.dll",
-        "lib/net40-Client/PCLCrypto.xml",
-        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/PCLCrypto.dll",
-        "lib/portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10/PCLCrypto.xml",
-        "lib/sl5/PCLCrypto.dll",
-        "lib/sl5/PCLCrypto.xml",
-        "lib/win81/PCLCrypto.dll",
-        "lib/win81/PCLCrypto.pri",
-        "lib/win81/PCLCrypto.xml",
-        "lib/wp8/PCLCrypto.dll",
-        "lib/wp8/PCLCrypto.xml",
-        "lib/wpa81/PCLCrypto.dll",
-        "lib/wpa81/PCLCrypto.pri",
-        "lib/wpa81/PCLCrypto.xml",
-        "pclcrypto.1.0.2.15130.nupkg.sha512",
-        "pclcrypto.nuspec"
+        "commonservicelocator.2.0.2.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/net40/CommonServiceLocator.dll",
+        "lib/net45/CommonServiceLocator.dll",
+        "lib/net47/CommonServiceLocator.dll",
+        "lib/netcoreapp1.0/CommonServiceLocator.dll",
+        "lib/netstandard1.0/CommonServiceLocator.dll",
+        "lib/netstandard2.0/CommonServiceLocator.dll"
       ]
     },
-    "PCLStorage/1.0.2": {
-      "sha512": "9If+1ZFCk3QaT/asfiL+J9FMnx2CTMrLCU8tDMUOI/aCGWGWl9vJ1/KcMkjf92op23ZknenvYJZBLDAqE3sFlg==",
+    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
       "type": "package",
-      "path": "pclstorage/1.0.2",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid/PCLStorage.Abstractions.dll",
-        "lib/monoandroid/PCLStorage.Abstractions.xml",
-        "lib/monoandroid/PCLStorage.dll",
-        "lib/monoandroid/PCLStorage.xml",
-        "lib/monotouch/PCLStorage.Abstractions.dll",
-        "lib/monotouch/PCLStorage.Abstractions.xml",
-        "lib/monotouch/PCLStorage.dll",
-        "lib/monotouch/PCLStorage.xml",
-        "lib/net45/PCLStorage.Abstractions.dll",
-        "lib/net45/PCLStorage.Abstractions.xml",
-        "lib/net45/PCLStorage.dll",
-        "lib/net45/PCLStorage.xml",
-        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
-        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
-        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
-        "lib/portable-Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
-        "lib/portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
-        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.dll",
-        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.Abstractions.xml",
-        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.dll",
-        "lib/portable-net45+wp8+wpa81+win8+monoandroid+monotouch+Xamarin.iOS+Xamarin.Mac/PCLStorage.xml",
-        "lib/portable-win8+wpa81/PCLStorage.Abstractions.dll",
-        "lib/portable-win8+wpa81/PCLStorage.Abstractions.xml",
-        "lib/portable-win8+wpa81/PCLStorage.dll",
-        "lib/portable-win8+wpa81/PCLStorage.xml",
-        "lib/sl5/PCLStorage.Abstractions.dll",
-        "lib/sl5/PCLStorage.Abstractions.xml",
-        "lib/sl5/PCLStorage.dll",
-        "lib/sl5/PCLStorage.xml",
-        "lib/wp8/PCLStorage.Abstractions.dll",
-        "lib/wp8/PCLStorage.Abstractions.xml",
-        "lib/wp8/PCLStorage.dll",
-        "lib/wp8/PCLStorage.xml",
-        "pclstorage.1.0.2.nupkg.sha512",
-        "pclstorage.nuspec"
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
-    "Validation/2.0.6.15003": {
-      "sha512": "8vgCOG9mPeOd3xwyL20OT9RyOKq9PmJb0Iltzwj6eay38Cq2v6ojvpSDbc+sc6YXit+iAVyyvHTS29rBvDpdDQ==",
+    "MvvmLightLibs/5.4.1.1": {
+      "sha512": "xYpVzOYnIz/M6T0pdc3w5t0vrt2ZKspSS+CZjQ+pZE+5yHv9qXSWkncHJXb6D7Egstalso4ivnIUkA1xEClViw==",
       "type": "package",
-      "path": "validation/2.0.6.15003",
+      "path": "mvvmlightlibs/5.4.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.dll",
-        "lib/portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/Validation.xml",
-        "validation.2.0.6.15003.nupkg.sha512",
-        "validation.nuspec"
+        "lib/SL5/GalaSoft.MvvmLight.Extras.dll",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.Extras.xml",
+        "lib/SL5/GalaSoft.MvvmLight.dll",
+        "lib/SL5/GalaSoft.MvvmLight.pdb",
+        "lib/SL5/GalaSoft.MvvmLight.xml",
+        "lib/SL5/System.Windows.Interactivity.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/monoandroid1/GalaSoft.MvvmLight.XML",
+        "lib/monoandroid1/GalaSoft.MvvmLight.dll",
+        "lib/monoandroid1/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net35/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net35/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net35/GalaSoft.MvvmLight.dll",
+        "lib/net35/GalaSoft.MvvmLight.pdb",
+        "lib/net35/GalaSoft.MvvmLight.xml",
+        "lib/net35/System.Windows.Interactivity.dll",
+        "lib/net35/System.Windows.Interactivity.xml",
+        "lib/net40/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net40/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net40/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net40/GalaSoft.MvvmLight.dll",
+        "lib/net40/GalaSoft.MvvmLight.pdb",
+        "lib/net40/GalaSoft.MvvmLight.xml",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "lib/net45/GalaSoft.MvvmLight.Extras.dll",
+        "lib/net45/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Extras.xml",
+        "lib/net45/GalaSoft.MvvmLight.Platform.dll",
+        "lib/net45/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/net45/GalaSoft.MvvmLight.Platform.xml",
+        "lib/net45/GalaSoft.MvvmLight.dll",
+        "lib/net45/GalaSoft.MvvmLight.pdb",
+        "lib/net45/GalaSoft.MvvmLight.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Extras.xml",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.pri",
+        "lib/uap10.0/GalaSoft.MvvmLight.Platform.xml",
+        "lib/uap10.0/GalaSoft.MvvmLight.dll",
+        "lib/uap10.0/GalaSoft.MvvmLight.pdb",
+        "lib/uap10.0/GalaSoft.MvvmLight.xml",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/windows81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/windows81/GalaSoft.MvvmLight.dll",
+        "lib/windows81/GalaSoft.MvvmLight.pdb",
+        "lib/windows81/GalaSoft.MvvmLight.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp8/GalaSoft.MvvmLight.dll",
+        "lib/wp8/GalaSoft.MvvmLight.pdb",
+        "lib/wp8/GalaSoft.MvvmLight.xml",
+        "lib/wp8/System.Windows.Interactivity.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Extras.xml",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.Platform.xml",
+        "lib/wp81/GalaSoft.MvvmLight.dll",
+        "lib/wp81/GalaSoft.MvvmLight.pdb",
+        "lib/wp81/GalaSoft.MvvmLight.xml",
+        "lib/wp81/System.Windows.Interactivity.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pdb",
+        "lib/wpa81/GalaSoft.MvvmLight.Platform.pri",
+        "lib/wpa81/GalaSoft.MvvmLight.XML",
+        "lib/wpa81/GalaSoft.MvvmLight.dll",
+        "lib/wpa81/GalaSoft.MvvmLight.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.pdb",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.XML",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.dll",
+        "lib/xamarin.ios10/GalaSoft.MvvmLight.pdb",
+        "mvvmlightlibs.5.4.1.1.nupkg.sha512",
+        "mvvmlightlibs.nuspec"
       ]
     },
-    "Xamarin.Forms/3.6.0.344457": {
-      "sha512": "7IffIKgL0fmgbfCLKzXaFKJ7uOueKiz/BIgmAG1Z5WMn+vMKeALe5GgRs3Uddo670VzllIHWkNEZD3lG+e02bw==",
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
       "type": "package",
-      "path": "xamarin.forms/3.6.0.344457",
+      "path": "system.threading.tasks.extensions/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Xamarin.Forms/4.8.0.1451": {
+      "sha512": "3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
+      "type": "package",
+      "path": "xamarin.forms/4.8.0.1451",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
         "build/MonoAndroid10/proguard.cfg",
+        "build/XCODE10/Xamarin.Forms.Platform.iOS.dll",
+        "build/XCODE10/Xamarin.Forms.Platform.iOS.pdb",
+        "build/XCODE10/Xamarin.Forms.Platform.macOS.dll",
+        "build/XCODE11/Xamarin.Forms.Platform.iOS.dll",
+        "build/XCODE11/Xamarin.Forms.Platform.iOS.pdb",
+        "build/XCODE11/Xamarin.Forms.Platform.macOS.dll",
         "build/Xamarin.Forms.DefaultItems.props",
         "build/Xamarin.Forms.DefaultItems.targets",
         "build/Xamarin.Forms.props",
@@ -1107,19 +1221,66 @@
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/MonoAndroid81/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/MonoAndroid81/FormsViewGroup.dll",
-        "lib/MonoAndroid81/FormsViewGroup.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Core.xml",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.Android.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Platform.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.dll",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.pdb",
-        "lib/MonoAndroid81/Xamarin.Forms.Xaml.xml",
+        "buildTransitive/MonoAndroid10/proguard.cfg",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.iOS.dll",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.iOS.pdb",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.macOS.dll",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.dll",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.pdb",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.macOS.dll",
+        "buildTransitive/Xamarin.Forms.DefaultItems.props",
+        "buildTransitive/Xamarin.Forms.DefaultItems.targets",
+        "buildTransitive/Xamarin.Forms.props",
+        "buildTransitive/Xamarin.Forms.targets",
+        "buildTransitive/net46/Mono.Cecil.Mdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Pdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Rocks.dll",
+        "buildTransitive/net46/Mono.Cecil.dll",
+        "buildTransitive/net46/System.ValueTuple.dll",
+        "buildTransitive/net46/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/net46/Xamarin.Forms.Core.dll",
+        "buildTransitive/net46/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.dll",
+        "buildTransitive/netstandard2.0/System.CodeDom.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Core.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/de/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/de/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/es/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/es/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/fr/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/fr/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/it/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/it/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ja/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ja/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ko/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ko/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/pt-BR/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/ru/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/ru/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid10.0/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid90/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid90/FormsViewGroup.dll",
@@ -1133,11 +1294,30 @@
         "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll",
         "lib/MonoAndroid90/Xamarin.Forms.Xaml.pdb",
         "lib/MonoAndroid90/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/de/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/de/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/es/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/es/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/fr/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/fr/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/it/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/it/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/ja/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/ja/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/ko/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/ko/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/pt-BR/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/ru/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/ru/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/MonoAndroid90/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid90/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
-        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
         "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
@@ -1145,8 +1325,6 @@
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
-        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
-        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
@@ -1154,27 +1332,43 @@
         "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll",
@@ -1182,8 +1376,12 @@
         "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
         "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/netstandard1.0/Xamarin.Forms.Core.dll",
@@ -1202,6 +1400,26 @@
         "lib/netstandard2.0/Xamarin.Forms.Xaml.dll",
         "lib/netstandard2.0/Xamarin.Forms.Xaml.pdb",
         "lib/netstandard2.0/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/de/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/de/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/es/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/es/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/fr/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/fr/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/it/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/it/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/ja/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/ja/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/ko/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/ko/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/pt-BR/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/pt-BR/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/ru/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/ru/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/zh-Hans/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/zh-Hans/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/zh-Hant/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/zh-Hant/Xamarin.Forms.Xaml.xml",
         "lib/tizen40/Design/Xamarin.Forms.Core.Design.dll",
         "lib/tizen40/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/tizen40/Xamarin.Forms.Core.dll",
@@ -1213,66 +1431,114 @@
         "lib/tizen40/Xamarin.Forms.Xaml.dll",
         "lib/tizen40/Xamarin.Forms.Xaml.pdb",
         "lib/tizen40/Xamarin.Forms.Xaml.xml",
-        "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
-        "lib/uap10.0/Design/Xamarin.Forms.Xaml.Design.dll",
-        "lib/uap10.0/Xamarin.Forms.Core.dll",
-        "lib/uap10.0/Xamarin.Forms.Core.pdb",
-        "lib/uap10.0/Xamarin.Forms.Core.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pdb",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsFlyout.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Items/ItemsViewStyles.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControlStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Resources.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/SliderStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/StepperControl.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xbf",
-        "lib/uap10.0/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
-        "lib/uap10.0/Xamarin.Forms.Platform.dll",
-        "lib/uap10.0/Xamarin.Forms.Xaml.dll",
-        "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
-        "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.3.6.0.344457.nupkg.sha512",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.14393/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.16299/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.4.8.0.1451.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
-      "AWSSDK.CognitoIdentity >= 3.3.2.74",
-      "AWSSDK.Core >= 3.3.31.12",
-      "AWSSDK.DynamoDBv2 >= 3.3.17.10",
-      "Xamarin.Forms >= 3.6.0.344457"
+      "AWSSDK.CognitoIdentity >= 3.5.0.18",
+      "AWSSDK.Core >= 3.5.1.16",
+      "AWSSDK.DynamoDBv2 >= 3.5.0.18",
+      "MvvmLightLibs >= 5.4.1.1",
+      "Xamarin.Forms >= 4.8.0.1451"
     ]
   },
   "packageFolders": {
-    "/Users/manshaf/.nuget/packages/": {}
+    "C:\\Users\\nadco\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\ATS.iOS.csproj",
       "projectName": "ATS.iOS",
-      "projectPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj",
-      "packagesPath": "/Users/manshaf/.nuget/packages/",
-      "outputPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/obj/",
+      "projectPath": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+      "packagesPath": "C:\\Users\\nadco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/manshaf/.config/NuGet/NuGet.Config"
+        "C:\\Users\\nadco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1286,19 +1552,23 @@
         "dependencies": {
           "AWSSDK.CognitoIdentity": {
             "target": "Package",
-            "version": "[3.3.2.74, )"
+            "version": "[3.5.0.18, )"
           },
           "AWSSDK.Core": {
             "target": "Package",
-            "version": "[3.3.31.12, )"
+            "version": "[3.5.1.16, )"
           },
           "AWSSDK.DynamoDBv2": {
             "target": "Package",
-            "version": "[3.3.17.10, )"
+            "version": "[3.5.0.18, )"
+          },
+          "MvvmLightLibs": {
+            "target": "Package",
+            "version": "[5.4.1.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[3.6.0.344457, )"
+            "version": "[4.8.0.1451, )"
           }
         }
       }
@@ -1314,20 +1584,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "PCLCrypto 1.0.2.15130 depends on Validation (>= 2.0.6 && < 3.0.0) but Validation 2.0.6 was not found. An approximate best match of Validation 2.0.6.15003 was resolved.",
-      "libraryId": "Validation",
-      "targetGraphs": [
-        "Xamarin.iOS,Version=v1.0",
-        "Xamarin.iOS,Version=v1.0/win",
-        "Xamarin.iOS,Version=v1.0/win-x64",
-        "Xamarin.iOS,Version=v1.0/win-x86"
-      ]
-    }
-  ]
+  }
 }

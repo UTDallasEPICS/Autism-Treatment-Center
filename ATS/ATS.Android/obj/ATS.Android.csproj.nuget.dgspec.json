@@ -1,72 +1,130 @@
 {
   "format": 1,
   "restore": {
-    "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/ATS.Android.csproj": {}
+    "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.Android\\ATS.Android.csproj": {}
   },
   "projects": {
-    "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/ATS.Android.csproj": {
+    "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.Android\\ATS.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/ATS.Android.csproj",
+        "projectUniqueName": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.Android\\ATS.Android.csproj",
         "projectName": "ATS.Android",
-        "projectPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/ATS.Android.csproj",
-        "packagesPath": "/Users/manshaf/.nuget/packages/",
-        "outputPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.Android/obj/",
+        "projectPath": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.Android\\ATS.Android.csproj",
+        "packagesPath": "C:\\Users\\nadco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/manshaf/.config/NuGet/NuGet.Config"
+          "C:\\Users\\nadco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid80"
+          "monoandroid90"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid80": {
+          "monoandroid90": {
             "projectReferences": {}
           }
         }
       },
       "frameworks": {
-        "monoandroid80": {
+        "monoandroid90": {
           "dependencies": {
             "AWSSDK.CognitoIdentity": {
               "target": "Package",
-              "version": "[3.3.100.70, )"
+              "version": "[3.5.0.18, )"
+            },
+            "AWSSDK.CognitoIdentity": {
+              "target": "Package",
+              "version": "[3.5.0.18, )"
             },
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.3.103.34, )"
+              "version": "[3.5.1.16, )"
+            },
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.5.1.16, )"
             },
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.3.101.61, )"
+              "version": "[3.5.0.18, )"
+            },
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.5.0.18, )"
+            },
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
             },
             "Xamarin.Android.Support.Design": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v4": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.AppCompat": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.AppCompat": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.CardView": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.CardView": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.MediaRouter": {
               "target": "Package",
-              "version": "[25.4.0.2, )"
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[2.5.1.527436, )"
+              "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.1.0.714, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.1.0.714, )"
             }
           }
         }

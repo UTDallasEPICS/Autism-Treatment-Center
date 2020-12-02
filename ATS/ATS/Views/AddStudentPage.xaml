@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.AddStudentPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.25*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+                <!--HEADER-->
+                <Label Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   BackgroundColor="#0F5787"
+                   Text="Student"
+                   TextColor="White"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="25"/>
+                <!--menu button-->
+                <Button Grid.Row="0"
+                    Clicked="MenuClickedAsync" ImageSource="MenuLines.png"
+                    Scale=".35"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"/>
+                <!--this should display a picture of the patient-->
+                <Image  Source="person.png"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="2"
+                    Margin="0,20,0,0">
+            </Image>
+                <!--the entries below are to be filled out by therapists to create new student and add initial data about them, add more entries as needed-->
+                <Entry Grid.Row="2"
+                   Grid.ColumnSpan="2"
+                   Placeholder="Name..."
+                   Margin="18">
+            </Entry>
+            <Entry Grid.Row="3"
+                   Grid.ColumnSpan="2"
+                   Placeholder="Age..."
+                   Margin="18">
+            </Entry>
+            <Entry Grid.Row="4"
+                   Grid.ColumnSpan="2"
+                   Placeholder="Gender..."
+                   Margin="18">
+            </Entry>
+                <!--submit button-->
+                <Button Clicked="SubmitClickedAsync" Text="Submit"
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                TextColor="White"
+                BackgroundColor="#0F5787"
+                Margin="140,30"
+                CornerRadius="12"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.SchedulePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1.25*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <!--HEADER-->
+                <Label Grid.Row="0"
+                   Grid.ColumnSpan="4"
+                   BackgroundColor="#0F5787"
+                   Text="Schedule"
+                   TextColor="White"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   FontSize="25"/>
+                <!--Menu Button-->
+                <Button Clicked="MenuClickedAsync" ImageSource="MenuLines.png"
+                        Scale=".35"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="0"
+                    Grid.Column="0"/>
+                <!--Student search bar-->
+                <Entry Grid.Row="1"
+                   Grid.ColumnSpan="4"
+                   Placeholder="Student Search..."
+                   Margin="18">
+                </Entry>
+                <!--Next 3 entries lets user enter a date to narrow down search results-->
+                <Entry Grid.Row="2"
+                   Grid.Column="0"
+                   Placeholder="Month"
+                   Margin="18">
+                </Entry>
+                <Entry Grid.Row="2"
+                   Grid.Column="1"
+                   Placeholder="Day"
+                   Margin="18">
+                </Entry>
+                <Entry Grid.Row="2"
+                   Grid.Column="2"
+                   Placeholder="Year"
+                   Margin="18">
+                </Entry>
+
+                <!--Search Button-->
+                <Button Clicked="StudentSearchClickedAsync" Text="Search"
+                    TextColor="White"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Margin="10,30"/>
+                <!--This needs to be replaced by some type of collection that displays schedule data stored in the database, this is just a static image to prototype how it should look-->
+                <Image  Source="Schedulepic.png"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="4"
+                    Margin="0,20,0,0">
+                </Image>
+                <!--new session button-->
+                <Button Clicked="NewSessionClickedAsync" Text="New Session"
+                    TextColor="White"
+                    FontSize="13"
+                    BackgroundColor="#0F5787"
+                    CornerRadius="12"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Margin="20,25,0,30"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

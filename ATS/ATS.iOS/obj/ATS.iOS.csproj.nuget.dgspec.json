@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj": {}
+    "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\ATS.iOS.csproj": {}
   },
   "projects": {
-    "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj": {
+    "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\ATS.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\ATS.iOS.csproj",
         "projectName": "ATS.iOS",
-        "projectPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/ATS.iOS.csproj",
-        "packagesPath": "/Users/manshaf/.nuget/packages/",
-        "outputPath": "/Users/manshaf/Projects/Autism-Treatment-Center/ATS/ATS.iOS/obj/",
+        "projectPath": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+        "packagesPath": "C:\\Users\\nadco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/manshaf/.config/NuGet/NuGet.Config"
+          "C:\\Users\\nadco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,19 +40,23 @@
           "dependencies": {
             "AWSSDK.CognitoIdentity": {
               "target": "Package",
-              "version": "[3.3.2.74, )"
+              "version": "[3.5.0.18, )"
             },
             "AWSSDK.Core": {
               "target": "Package",
-              "version": "[3.3.31.12, )"
+              "version": "[3.5.1.16, )"
             },
             "AWSSDK.DynamoDBv2": {
               "target": "Package",
-              "version": "[3.3.17.10, )"
+              "version": "[3.5.0.18, )"
+            },
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[3.6.0.344457, )"
+              "version": "[4.8.0.1451, )"
             }
           }
         }

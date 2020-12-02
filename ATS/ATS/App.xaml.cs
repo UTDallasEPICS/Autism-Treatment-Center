@@ -23,10 +23,10 @@ namespace ATS
             MainPage = new NavigationPage(new ATS.MainPage());
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+       // private void InitializeComponent()
+       // {
+           // throw new NotImplementedException();
+       // }
 
         protected override void OnStart()
         {

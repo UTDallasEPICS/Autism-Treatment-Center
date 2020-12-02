@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Views.MenuPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.5*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <BoxView Grid.Column="0"
+                     Color="#0F5787"/>
+            <BoxView Grid.Column="1"
+                     Color="White"/>
+            <!-- thearapist photo -->
+            <Image  Source="profilepic.png"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="4"
+                    Margin="0,20,0,0"/>
+            <!-- thearapist name -->
+            <Label Grid.Row="1"
+                   BackgroundColor="#0F5787"
+                   Text="[Thearapist Name]"
+                   TextColor="White"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Left"
+                   FontAttributes="Bold"
+                   FontSize="22"/>
+            <!-- students -->
+            <Label Grid.Row="2"
+                BackgroundColor="#0F5787"
+                Text="Students"
+                TextColor="White"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Left"
+                FontAttributes="Bold"
+                FontSize="25"/>
+            <!-- search -->
+            <Button Clicked="SearchClickedAsync" Text="Search"
+                TextColor="White"
+                BackgroundColor="#0F5787"
+                CornerRadius="0"
+                Grid.Row="3"
+                Grid.Column="0"/>
+            <!-- add new -->
+            <Button Clicked="AddNewClickedAsync" Text="Add New"
+                TextColor="White"
+                BackgroundColor="#0F5787"
+                CornerRadius="0"
+                Grid.Row="4"
+                Grid.Column="0"/>
+            <!-- schedule -->
+            <Label Grid.Row="5"
+                BackgroundColor="#0F5787"
+                Text="Schedule"
+                TextColor="White"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Left"
+                FontAttributes="Bold"
+                FontSize="25"/>
+            <!-- view schedule -->
+            <Button Clicked="ViewScheduleClickedAsync" Text="View Schedule"
+                TextColor="White"
+                BackgroundColor="#0F5787"
+                CornerRadius="0"
+                Grid.Row="6"
+                Grid.Column="0"/>
+            <!-- logout -->
+            <Button Clicked="LogoutClickedAsync" Text="Logout"
+                TextColor="White"
+                BackgroundColor="#0F5787"
+                CornerRadius="0"
+                Grid.Row="8"
+                Grid.Column="0"/>
+            <Label Grid.Row="7"
+                BackgroundColor="#0F5787"/>
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

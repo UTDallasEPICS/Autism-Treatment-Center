@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ATS"
+             x:Class="ATS.MainPage">
+    <ScrollView>
+        <StackLayout>
+
+            <!--ATS Header Text-->
+            <!-- <Label Text="Autism Treatment Solutions"
+         FontSize="Medium"
+            FontAttributes="Bold"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+-->
+            <!--ATS Logo-->
+            <!--We can add a new logo or resize the logo here:-->
+            <!--If you add a new logo, you have to put the png files in resources-->
+            <Image Scale="0.75" Source="ATCLOGO.png"
+               HeightRequest="250"
+               WidthRequest="250"
+                   Margin="25 0 0 0">
+
+            </Image>
+
+            <!--This is the markup for the username and password entry
+            Placeholder = text doesn't need to be deleted, it's just in the background
+            IsPassord = When inputing the password, chars turn into dots -->
+            <Entry Placeholder="Username"
+                   Margin="8 50">
+            </Entry>
+            <Entry IsPassword="true" Placeholder="Password"
+               Margin="8 50">
+
+            </Entry>
+            <!--We might need a forgot password option-->
+
+            <!--Sign In Button-->
+            <Button Clicked="SignInClickedAsync" Text="Sign In"
+                TextColor="White"
+                Margin="30 147"
+                BackgroundColor="#0F5787"
+                CornerRadius="12"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

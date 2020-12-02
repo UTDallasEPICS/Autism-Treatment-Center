@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "GO7Su+HzWa4JGo6sXTdZF+9FjGDrJL6UCXiqYTrArQrrl/MsL21cMCrtCkfhASLX5xta9j9q03yyFRsS2I26yg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nadco\\Desktop\\Autism-Treatment-Center-masterV2\\ATS\\ATS.iOS\\ATS.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nadco\\.nuget\\packages\\awssdk.cognitoidentity\\3.5.0.18\\awssdk.cognitoidentity.3.5.0.18.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\awssdk.core\\3.5.1.16\\awssdk.core.3.5.1.16.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\awssdk.dynamodbv2\\3.5.0.18\\awssdk.dynamodbv2.3.5.0.18.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\awssdk.securitytoken\\3.5.0.18\\awssdk.securitytoken.3.5.0.18.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\commonservicelocator\\2.0.2\\commonservicelocator.2.0.2.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\nadco\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}
